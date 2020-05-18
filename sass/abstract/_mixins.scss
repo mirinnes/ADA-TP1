@@ -7,7 +7,7 @@
             $buttonBgColor,     //Color de fondo -elegir alguno de los q hay entre las variables de colores- 
             $buttonFontColor,   //Color de la letra 
             $fontSize,          //Tamaño de fuente
-            $paddingButtonLR    //Padding Left y Right
+            $paddingButtonLR,    //Padding Left y Right
             $paddingButtonTB    //Padding Bottom y Top
             ) {
                 border: none;
@@ -56,9 +56,21 @@
 
 // ////////////////////////////////////////// Break Points
 
-/* 
-    Dejar algo de espacio aca para cuando escribamos los breakpoints
+@mixin breakpoint-mobile-1 {
+    @media (min-width: 414px) {
+        @content;
+    }
+}
 
-*/
+@mixin breakpoint-tablet {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
 
+@mixin breakpoint-desktop {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
 // //////////////////////////////////////////////////////
