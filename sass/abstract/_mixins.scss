@@ -1,7 +1,6 @@
 @import "./variables";
 
 // ////////////////////////// Estilos de Botones
-
 // ////////////////////////// Mixin del Boton con fondo y su hover
 @mixin button-withBackground(
             $buttonBgColor,     //Color de fondo -elegir alguno de los q hay entre las variables de colores- 
@@ -28,7 +27,6 @@
     
 }
 // //////////////////////////////////////////////////////
-
 // ///////////////////////// Mixin del Boton transparente y su hover
 @mixin button-transparent(
             $buttonFontColor,               //Color de la letra y del Borde
