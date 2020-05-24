@@ -1,0 +1,13 @@
+/*----------------------------------------ABOUT-US--*/
+@import "../abstract/mixins";
+
+
+.textContainer {
+    width: 100wh;
+
+}
+.text-aboutus {
+    background-color:red;
+    @include display-center;
+    flex-wrap: wrap;
+}

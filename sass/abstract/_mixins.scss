@@ -71,4 +71,12 @@
         @content;
     }
 }
-// //////////////////////////////////////////////////////
+
+// ////////////////////////////////////////////////////// Displays
+
+@mixin display-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}

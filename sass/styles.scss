@@ -1,11 +1,43 @@
+// Abstract
+@import "./abstract/mixins";
+@import "./abstract/variables";
+
+// Components
+
+// Section
+// ==> Mora Sections
+@import "./layouts/whyChooseUs";
+@import "./layouts/portfolio";
+
 body {
     margin: 0;
+    color: #444;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
+/* Estructura General */
 .container {
-    width: 100%;
     margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    max-width: 100%;
+    @include breakpoint-mobile-1 {
+        max-width: 413px;
+    }
+    @include breakpoint-tablet {
+        max-width: 767px;
+    }
+    @include breakpoint-desktop {
+        max-width: 1140px;
+    }
 }
 
-
-
+/* Títulos iniciales */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
