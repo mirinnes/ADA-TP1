@@ -1,13 +1,80 @@
 /*----------------------------------------ABOUT-US--*/
 @import "../abstract/mixins";
+@import "../abstract/variables";
 
 
-.textContainer {
-    width: 100wh;
 
+
+/*----------------------------------------ABOUT-US--*/
+/*--------------------------------------------------*/
+.aboutus {
+    p {
+        color: $mediumgray;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+.title-aboutus {
+    padding: 25px 0;
+    text-align: center;
+    h1 {
+        font-size: $title-h3;
+        font-weight: 500;
+        color: $balckbolder;
+    }
+    p {
+        font-size: $font-m; 
+    }   
 }
 .text-aboutus {
-    background-color:red;
     @include display-center;
     flex-wrap: wrap;
+        aside {
+            img {
+                padding: 40px 0;
+                width: 100%;
+            }
+        }
+        h3 {
+            font-size: $title-h4; 
+        }
+        &.a1 {
+            .text-op {
+                padding: 20px 0;
+                display: flex;
+                .icon {
+                    @include display-center;
+                    background-color: $white;
+                    border-radius: 50%;
+                    border: 2px solid $blue;
+                    margin: 0;
+                    height: fit-content;
+                    i {
+                        font-size: 24px;
+                        color: $blue;
+                        padding: 18px;
+                    }
+                }
+                .icon-text {
+                    padding-left: 15px;
+                    h4 {
+                        margin-bottom: 10px;
+                        width: fit-content;
+                        a{
+                            font-size: $font-xl;
+                        }
+                    }
+                    p {
+                        margin: 0;
+                        line-height: 24px;
+                        font-size: $font-s;
+                    }                    
+                }
+
+            }
+        }
+
 }
+/*--------------------------------------------------*/

@@ -3,12 +3,15 @@
 @import "./abstract/variables";
 
 // Components
+// About Us <~~ Miri 
+@import "./layouts/aboutUs";
 
 // Section
 // ==> Mora Sections
 @import "./layouts/whyChooseUs";
 @import "./layouts/portfolio";
 
+//  <~~ Miri 
 body {
     margin: 0;
     color: #444;

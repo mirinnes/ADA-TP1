@@ -1,6 +1,92 @@
-body {
-  margin: 0; }
+@charset "UTF-8";
+/* Fonts */
+/* Fonts */
+/*----------------------------------------ABOUT-US--*/
+/* Fonts */
+/* Fonts */
+/*----------------------------------------ABOUT-US--*/
+/*--------------------------------------------------*/
+.aboutus p {
+  color: #556877; }
 
+.aboutus a {
+  text-decoration: none; }
+
+.title-aboutus {
+  padding: 25px 0;
+  text-align: center; }
+  .title-aboutus h1 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #111111; }
+  .title-aboutus p {
+    font-size: 16px; }
+
+.text-aboutus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .text-aboutus aside img {
+    padding: 40px 0;
+    width: 100%; }
+  .text-aboutus h3 {
+    font-size: 24px; }
+  .text-aboutus.a1 .text-op {
+    padding: 20px 0;
+    display: flex; }
+    .text-aboutus.a1 .text-op .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffff;
+      border-radius: 50%;
+      border: 2px solid #007bff;
+      margin: 0;
+      height: fit-content; }
+      .text-aboutus.a1 .text-op .icon i {
+        font-size: 24px;
+        color: #007bff;
+        padding: 18px; }
+    .text-aboutus.a1 .text-op .icon-text {
+      padding-left: 15px; }
+      .text-aboutus.a1 .text-op .icon-text h4 {
+        margin-bottom: 10px;
+        width: fit-content; }
+        .text-aboutus.a1 .text-op .icon-text h4 a {
+          font-size: 18px; }
+      .text-aboutus.a1 .text-op .icon-text p {
+        margin: 0;
+        line-height: 24px;
+        font-size: 14px; }
+
+/*--------------------------------------------------*/
+body {
+  margin: 0;
+  color: #444;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.5; }
+
+/* Estructura General */
 .container {
-  width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 100%; }
+  @media (min-width: 414px) {
+    .container {
+      max-width: 413px; } }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 767px; } }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px; } }
+
+/* Títulos iniciales */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+  margin: 0 0 20px 0;
+  padding: 0; }
