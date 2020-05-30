@@ -1,0 +1,133 @@
+@import "../abstract/mixins";
+@import "../abstract/variables";
+body {
+    margin: 0;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #004a99;
+    width: 100%;
+}
+ul{
+    list-style: none;
+}
+.email {
+    border: 0;
+    padding: 6px 8px;
+    width: 65%;
+    font-family: $normal-font;
+}
+.subscribe {
+    background: $otherblue;
+    border: 0;
+    width: 35%;
+    padding: 6px 0;
+    text-align: center;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+    font-family: $normal-font;
+}
+.iconos{
+    color: white;
+}
+.Container1{
+    @include Containers;
+}
+.WAYNER {
+    @include descripciones;
+    width: 23%;
+    margin-right: 30px;
+    &.titulos {
+        font-size: 50px;
+    }
+}
+.titulos{
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.titulos1{
+    font-size: 34px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+p{
+    line-height: 26px;
+}
+
+.USEFUL-LINKS {
+    @include descripciones;
+    width: 15%;
+     .links {
+        color:white;
+        text-decoration: none;
+        line-height: 35px;
+}
+ul{
+    padding: 0;
+}
+}
+.CONTACT-US {
+    @include descripciones;
+    width: 250px;
+    margin-right: 30px;
+    p{
+        margin: 0;
+    }
+    .div-redes {
+        margin: 25px 0 25px;
+
+        .iconos {
+            text-align: center;
+            width: 35px;
+            font-size: 20px;
+            line-height: 2;
+            padding: 2px 2px;
+            margin-right: 8px;
+            display: inline-block;
+            color: white;
+            border-radius: 50%;
+            background-color:#007bff;
+            height: 35px;
+        }
+    }
+}
+.redes{
+    @include footer-redes;
+}
+.OUR-NEWSLETTER {
+    @include descripciones;
+    width: 17%;
+}   
+.Container2 {
+    @include Containers;
+   height: 35px;
+   background-color: #00428a;
+   position: relative;
+   
+}
+.COPYRIGHT {
+    @include descripciones
+}    
+.fa-chevron-circle-up {
+    color: $otherblue;
+    font-size: 40px;
+    position: absolute;
+    right: 12px;
+    position: fixed;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+}
