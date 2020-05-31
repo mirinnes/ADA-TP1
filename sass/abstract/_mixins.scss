@@ -94,3 +94,28 @@
     line-height: 24px;
     margin-bottom: 0;
 }
+@mixin iconos {
+    text-align: center;
+    width: 35px;
+    font-size: 20px;
+    line-height: 2;
+    padding: 2px 2px;
+    margin-right: 8px;
+    display: inline-block;
+    color: white;
+    border-radius: 50%;
+    background-color:#007bff;
+    height: 35px;
+}
+
+@mixin titulo {
+    font-size: 34px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
