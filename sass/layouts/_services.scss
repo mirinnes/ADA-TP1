@@ -1,0 +1,25 @@
+@import "../abstract/mixins";
+@import "../abstract/variables";
+
+.services {
+    background-color: $lightgray;
+    width: 280px;
+}
+h1 {
+    display: flex;
+    font-family: $title-font;
+    justify-content: center;
+    color: white;
+}
+p{
+    font-family: $normal-font;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    color: $blackbold;
+}
+img {
+    width: 50px;
+    height: 70px;
+}
