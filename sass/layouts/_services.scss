@@ -2,24 +2,74 @@
 @import "../abstract/variables";
 
 .services {
-    background-color: $lightgray;
-    width: 280px;
+    background-color: $lightblue;
+    width: 100%;
+    padding: 60px 0 40px 0;
 }
 h1 {
     display: flex;
     font-family: $title-font;
     justify-content: center;
-    color: white;
-}
-p{
-    font-family: $normal-font;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+    font-size: 36px;
     color: $blackbold;
+    font-weight: 500;
+    text-align: center;
+    margin: 5px;
+}
+.texto{
+    color: $mediumgray;
+    display: flex;
+    font-size: 15px;
+    font-family: $normal-font;
+    justify-content: center;
+    line-height: 24px;
+    margin-bottom: 0;
+    padding: 0 0 60px;
+    margin: 0;
+    text-align: center;
 }
 img {
     width: 50px;
     height: 70px;
+    position: absolute;
+    left: 1px;
+    top: 85px;
 }
+.contenedor{
+    width: 90%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.card {
+    position: relative;
+    padding: 25px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 10px 40px 10px;
+    background: #fff;
+    /*width: 70%;
+    height: 170px;*/
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    /*transition: all 0.3s ease-in-out;*/
+    .titulocard{
+        margin: 0 0 15px 40px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        font-size: 18px;
+        font-family: $title-font;
+               }
+            .textcard{
+            text-align: left;
+            font-size: 15px;
+            margin: 0 0 0 40px;
+            line-height: 24px;
+            color: #444;
+            font-family: $normal-font;
+            }
+        }
