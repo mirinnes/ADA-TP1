@@ -16,6 +16,7 @@ h2{
     padding: 0%;
     margin: 0;
     box-sizing: border-box;
+    align-self: center;
 }
 .team-cards-container{
 
@@ -32,9 +33,7 @@ h2{
     background: rgba(0,0,0,0.75);
 }
 
-i {
-    font-family: $fa-font-path;
-}
+
 #team {
     /*display: flex;
     flex-direction: column;
