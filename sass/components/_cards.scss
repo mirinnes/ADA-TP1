@@ -4,7 +4,7 @@
 ------------------------------------------------*/
 
 .team-card {
-    @include flex(column, center, center);
+    
     margin: 15px 15px;
     
 
@@ -24,16 +24,9 @@
     position: relative;
 
     img {
-        height: 280px;
-
-        @media(max-width: $in-between) {
-            height: 350px;
-        }
-
-        @media(max-width: $small-screen) {
-            height: 550px;
-        }
+        height: 280px; 
     }
+
 }
 
 .team-description-container {
@@ -43,6 +36,7 @@
     color: $white;
     transform: translateY(20px);
     opacity: 0;
+    top: 0;
 
     h4 {
         font-size: $normal-font;
@@ -73,5 +67,6 @@
     opacity: 0;
     position: absolute;
     transition: all ease-in-out 0.3s;
+    top: 0;
 
 }

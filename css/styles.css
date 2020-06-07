@@ -22,11 +22,17 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: center; }
+  @media (max-width: 1200px) {
+    .team-cards-container {
+      display: flex;
+      flex-wrap: wrap; } }
 
 .team-Members:hover:after {
   z-index: 1;
   background: rgba(0, 0, 0, 0.75); }
 
+@media (min-width: 768px) {
+  background-color: red; }
 #team {
   /*display: flex;
   flex-direction: column;
@@ -52,14 +58,16 @@ h2 {
     width: 520%;
     margin: 0;
     left: 0; }
+    @media (max-width: 768px) {
+      #Testimonials figure {
+        width: 500%; } }
 
 #Testimonials img {
   float: left;
-  width: 10%;
+  width: 100%;
   border-radius: 50%;
   border-color: white;
-  border-style: solid;
-  margin: 10px; }
+  border-style: solid; }
 
 .testimonialCard {
   width: 20%;
@@ -81,10 +89,28 @@ h2 {
 h3 {
   font-size: 20px;
   font-weight: bold; }
+  @media (max-width: 768px) {
+    h3 {
+      text-align: center; } }
 
-.container {
+.testimonials-cards-container {
   overflow: hidden;
-  width: 60%; }
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 100%; }
+
+#Testimonials .img-Container {
+  width: 17%; }
+  @media (max-width: 768px) {
+    #Testimonials .img-Container {
+      display: inline-block; } }
+
+@media (max-width: 768px) {
+  #Testimonials .testimonialCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
 
 #Testimonials figure {
   animation: 20s slider infinite; }
@@ -112,10 +138,6 @@ h3 {
                TEAM CARDS
 ------------------------------------------------*/
 .team-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin: 15px 15px; }
   .team-card:hover .team-bg {
     opacity: 0.5;
@@ -131,26 +153,8 @@ h3 {
   border-radius: 50%;
   overflow: hidden;
   position: relative; }
-  @media (max-width: 1200px) {
-    .team-img-container {
-      width: 210px;
-      height: 210px; } }
-  @media (max-width: 990px) {
-    .team-img-container {
-      width: 330px;
-      height: 330px; } }
-  @media (max-width: 770px) {
-    .team-img-container {
-      width: 510px;
-      height: 510px; } }
   .team-img-container img {
     height: 280px; }
-    @media (max-width: 990px) {
-      .team-img-container img {
-        height: 350px; } }
-    @media (max-width: 770px) {
-      .team-img-container img {
-        height: 550px; } }
 
 .team-description-container {
   display: flex;
@@ -164,19 +168,8 @@ h3 {
   position: absolute;
   color: #ffffff;
   transform: translateY(20px);
-  opacity: 0; }
-  @media (max-width: 1200px) {
-    .team-description-container {
-      width: 210px;
-      height: 210px; } }
-  @media (max-width: 990px) {
-    .team-description-container {
-      width: 330px;
-      height: 330px; } }
-  @media (max-width: 770px) {
-    .team-description-container {
-      width: 510px;
-      height: 510px; } }
+  opacity: 0;
+  top: 0; }
   .team-description-container h4 {
     font-size: "Open Sans", sans-serif;
     padding: 5px; }
@@ -200,19 +193,8 @@ h3 {
   background-color: #004289;
   opacity: 0;
   position: absolute;
-  transition: all ease-in-out 0.3s; }
-  @media (max-width: 1200px) {
-    .team-bg {
-      width: 210px;
-      height: 210px; } }
-  @media (max-width: 990px) {
-    .team-bg {
-      width: 330px;
-      height: 330px; } }
-  @media (max-width: 770px) {
-    .team-bg {
-      width: 510px;
-      height: 510px; } }
+  transition: all ease-in-out 0.3s;
+  top: 0; }
 
 body {
   margin: 0;

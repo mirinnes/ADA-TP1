@@ -71,6 +71,18 @@
         @content;
     }
 }
+
+@mixin breakpoint-tablet-desktop-first {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin breakpoint-desktop-first {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
 // //////////////////////////////////////////////////////Cards
 
 @mixin teamCards {
@@ -78,23 +90,6 @@
     height: 255px;
     border-radius: 50%;
     overflow: hidden;
-
-    @media(max-width: $widescreen) {
-        width: 210px;
-        height: 210px;
-    }
-
-    @media(max-width: $in-between) {
-        width: 330px;
-        height: 330px;
-        
-    }
-
-    @media(max-width: $small-screen) {
-        width: 510px;
-        height: 510px;
-        
-    }
 }
 ///////Positions
 @mixin flex($flex-direction: row, $justify-content: center, $align-items: center) {
