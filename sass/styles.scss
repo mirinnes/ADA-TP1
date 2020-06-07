@@ -27,15 +27,16 @@ body {
     padding-right: 15px;
     padding-left: 15px;
     max-width: 100%;
-    @include breakpoint-mobile-1 {
-        max-width: 413px;
+    @include breakpoint-mobile-2 {
+        max-width: 512px;
     }
     @include breakpoint-tablet {
-        max-width: 767px;
+        max-width: 768px;
     }
     @include breakpoint-desktop {
-        max-width: 1140px;
+        max-width: 100%;
     }
+
 }
 
 /* Títulos iniciales */

@@ -17,64 +17,143 @@
 }
 
 .title-aboutus {
-    padding: 25px 0;
+    padding: 50px 0;
     text-align: center;
+
     h1 {
         font-size: $title-h3;
         font-weight: 500;
         color: $balckbolder;
     }
     p {
-        font-size: $font-m; 
+        font-size: 15px;
+        @include breakpoint-tablet {
+            margin: 0;
+            max-width: 350px;
+            display: inline-block;
+        }
+        @include breakpoint-desktop {
+            font-size: 17px;
+            max-width: 600px;  
+        }
+
     }   
 }
 .text-aboutus {
-    @include display-center;
-    flex-wrap: wrap;
-        aside {
-            img {
-                padding: 40px 0;
-                width: 100%;
+
+        @include display-center;
+        flex-wrap: wrap;
+        @include breakpoint-desktop {
+            padding: 0 50px;
+        }
+        .imagen-aboutus {
+            padding: 40px 0;
+            &.f1 {
+                display: none;
+                @include breakpoint-desktop {
+                    display: inline-block;
+                }   
             }
-        }
-        h3 {
-            font-size: $title-h4; 
-        }
-        &.a1 {
-            .text-op {
-                padding: 20px 0;
-                display: flex;
-                .icon {
-                    @include display-center;
-                    background-color: $white;
-                    border-radius: 50%;
-                    border: 2px solid $blue;
-                    margin: 0;
-                    height: fit-content;
-                    i {
-                        font-size: 24px;
-                        color: $blue;
-                        padding: 18px;
-                    }
+            &.f2 {
+                @include breakpoint-desktop {
+                    display: none;
                 }
-                .icon-text {
-                    padding-left: 15px;
-                    h4 {
-                        margin-bottom: 10px;
-                        width: fit-content;
-                        a{
-                            font-size: $font-xl;
-                        }
-                    }
-                    p {
-                        margin: 0;
-                        line-height: 24px;
-                        font-size: $font-s;
-                    }                    
-                }
+            }
+            @include breakpoint-tablet {
+                transform: scale(0.9);
+            }
+            @include breakpoint-desktop {
+                transform: scale(0.9);
+                max-width: 45%;
+                padding: 0 0;
+            }
+            img {
+                width: 100%;
 
             }
         }
+
+        h3 {
+            font-size: $title-h4; 
+        }
+        p {
+            color: $blackbold;
+            line-height: 27px;
+        }
+
+        .text {
+            @include breakpoint-tablet {
+                width: calc(100% - 80px);
+            }
+            @include breakpoint-desktop {
+                font-size: 17px;
+                width: 40%;
+                box-sizing: border-box;
+                h3 {
+                    font-size: 27px;   
+            }
+            }
+        }
+
+        &.a1 {
+            .container-options {
+                width: 100%;
+                .text-op {
+
+                    &:hover .icon{
+                        transition: cubic-bezier(1, -0.06, 0.56, 0.97);
+                        transition-duration: 0.3s;
+                        background-color: $blue;
+                        i {
+
+                            color: $white;
+                        }
+                    }
+                    padding: 20px 0;
+                    display: flex;
+                    .icon {
+                        @include display-center;
+                        background-color: $white;
+                        border-radius: 50%;
+                        border: 3px solid $blue;
+                        margin: 0;
+                        height: fit-content;
+                        i {
+                            font-size: 24px;
+                            color: $blue;
+                            padding: 17px;
+                        }
+                    }
+                    .icon-text {
+                        padding-left: 15px;
+                        h4 {
+                            margin-bottom: 6px;
+                            width: fit-content;
+                            a{
+                                color: $balckbolder;
+                                font-size: $font-xl;
+                            }
+                        }
+                        p {
+                            margin: 0;
+                            line-height: 24px;
+                            font-size: $font-s;
+                            font-weight: 450;
+                        }                    
+                    }
+    
+                }
+            }
+
+        }
+
+
+        @include breakpoint-desktop {
+            &.a1, &.a2, &.a3 {
+                padding: 0px 80px;
+            }
+        }
+
 
 }
 /*--------------------------------------------------*/
