@@ -5,14 +5,14 @@
   width: 100%; }
 
 h1 {
+  color: #283d50;
   display: flex;
   font-family: "Montserrat", sans-serif;
-  justify-content: center;
   font-size: 36px;
-  color: #283d50;
   font-weight: 500;
-  text-align: center;
-  margin: 5px; }
+  justify-content: center;
+  margin: 5px;
+  text-align: center; }
 
 .texto {
   color: #556877;
@@ -21,105 +21,99 @@ h1 {
   font-family: "Open Sans", sans-serif;
   justify-content: center;
   line-height: 24px;
+  margin: 0;
   margin-bottom: 0;
   padding: 0 0 60px;
-  margin: 0;
   text-align: center; }
 
 .contenedor {
-  width: 90%;
-  padding-right: 15px;
-  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-right: auto;
   margin-left: auto;
-  display: flex;
-  justify-content: center;
-  flex-direction: column; }
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 90%; }
 
 .card {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  display: flex;
+  justify-content: flex-start;
   margin: 0 10px 40px 10px;
   overflow: hidden;
-  padding: 25px;
-  display: flex;
-  justify-content: flex-start; }
+  padding: 25px; }
+  .card:hover {
+    transform: translateY(-5px);
+    transition: ease-in-out 0.4s; }
+    .card:hover .titulocard {
+      color: #007bff;
+      cursor: pointer;
+      transition: 0.2s linear; }
   .card img {
-    height: 70px;
-    width: 50px;
     align-self: center;
-    margin-left: -30px; }
+    height: 70px;
+    margin-left: -30px;
+    width: 50px; }
   .card .titulocard {
     margin: 0 0 15px 40px;
-    font-weight: 700;
     margin-bottom: 15px;
+    font-family: "Montserrat", sans-serif;
     font-size: 18px;
-    font-family: "Montserrat", sans-serif; }
+    font-weight: 700; }
   .card .textcard {
-    text-align: left;
-    font-size: 15px;
-    margin: 0 0 0 40px;
-    line-height: 24px;
     color: #444;
-    font-family: "Open Sans", sans-serif; }
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    margin: 0 0 0 40px;
+    text-align: left; }
 
 @media (min-width: 576px) and (min-width: 576px) {
-  .card {
-    width: 85%;
-    height: 95px; }
   .wrap {
+    align-self: center;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    align-self: center; }
+    justify-content: center; }
   .contenedor {
-    max-width: 540px; } }
+    max-width: 540px; }
+  .card {
+    height: 95px;
+    width: 85%; } }
 
 @media (min-width: 768px) and (min-width: 768px) {
-  .contenedor {
-    max-width: 1200px; }
   .services {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center; }
     .services p {
-      text-align: center;
-      margin: auto;
       font-size: 15px;
+      margin: auto;
+      text-align: center;
       width: 50%; }
+    .services .contenedor {
+      max-width: 1200px; }
   .wrap {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-right: -15px;
-    margin-left: -15px;
-    justify-content: center; }
+    margin-left: -15px; }
   .card {
-    width: 35%;
     height: 130px;
-    /*  padding-bottom: 50px;*/ }
+    width: 35%; }
     .card .textcard {
       width: 80%; } }
 
 @media (min-width: 1200px) and (min-width: 1200px) {
   .card {
     max-width: 50%;
-    padding-bottom: 10px; }
-  /*.contenedor {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0;
-        margin-right: -15px;
-        margin-left: -15px;
-        width: 100%;
-}*/
-  /*.wrap {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}   */ }
+    padding-bottom: 10px; } }
 
+/*ME FALTA HOVER Y MOVIMIENTO*/
 body {
   margin: 0; }
 

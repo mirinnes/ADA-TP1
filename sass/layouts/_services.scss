@@ -30,6 +30,16 @@ h1 {
     margin: 0 10px 40px 10px;
     overflow: hidden;
     padding: 25px;
+    &:hover {
+        transform: translateY(-5px);
+        transition: ease-in-out 0.4s;
+
+    .titulocard{
+            color: $blue;
+            cursor: pointer;
+            transition: 0.2s linear;
+}
+    }
     img {
         align-self: center;
         height: 70px;
@@ -51,6 +61,7 @@ h1 {
                 margin: 0 0 0 40px;
                 text-align: left;
             }
+
 }
 ///////////////////////////////////////////
 @include breakpoint-tablet-2 {
