@@ -73,3 +73,30 @@
 }
 ///////////////////////////////////////////////////////
 /////////////SERVICES/////////////
+@mixin breakpoint-tablet-2 {
+    @media (min-width: 576px){
+        @content;
+    }
+}
+@mixin h1 {
+    color: $blackbold;
+    display: flex;
+    font-family: $title-font;
+    font-size: 36px;
+    font-weight: 500;
+    justify-content: center;
+    margin: 5px;
+    text-align: center;
+}
+@mixin texto {
+    color: $mediumgray;
+    display: flex;
+    font-size: 15px;
+    font-family: $normal-font;
+    justify-content: center;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 0;
+    padding: 0 0 60px;
+    text-align: center;
+}
