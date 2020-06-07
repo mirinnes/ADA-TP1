@@ -77,7 +77,6 @@
         @content;
     }
 }
-
 @mixin breakpoint-desktop-first {
     @media (max-width: 1200px) {
         @content;
