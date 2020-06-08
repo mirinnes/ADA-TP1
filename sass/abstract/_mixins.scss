@@ -82,10 +82,11 @@
         @content;
     }
 }
-
-
-
-
+@mixin breakpoint-desktop-1{
+    @media (min-width: 992px) {
+        @content;
+    }
+}
 
 // //////////////////////////////////////////////////////
 @mixin footer-redes {
@@ -111,17 +112,22 @@
     margin-bottom: 0;
 }
 @mixin iconos {
+    align-items: center;
     background-color:$otherblue;
     border-radius: 50%;
     color: white;
-    display: inline-block;
-    font-size: 20px;
+    display: inline-flex;
     height: 32px;
-    /*line-height: 2;*/
+    font-size: 20px;
+    justify-content: center;
     margin-right: 5px;
     padding: 2px 2px;
     text-align: center;
     width: 32px;
+    &:hover{
+        background-color: $bluehover;
+        opacity: 30%;
+    }
 }
 
 @mixin titulo {
@@ -134,4 +140,23 @@
     margin: 0 0 20px 0;
     padding: 2px 0 2px 0;
     text-transform: uppercase;
+}
+
+@mixin circle-style {
+    .circle {
+        align-items: center;
+        background-color: $otherblue;
+        border-radius: 50%;
+        bottom: 20px;
+        display: flex;
+        height: 45px;
+        justify-content: center;
+        position: fixed;
+        right: 20px;
+        width: 45px;
+        cursor: pointer;
+        .fa-chevron-up{
+            color: white;
+                      } 
+            } 
 }

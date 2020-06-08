@@ -10,42 +10,42 @@
 body {
   margin: 0; }
 
+footer {
+  background-color: #004a99;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center; }
+
 .Container1 {
   background-color: #004a99;
   display: inline-block;
   flex-wrap: wrap;
-  width: 100%; }
-
-p {
-  color: #ecf5ff;
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  padding: 0px; }
-
-h1 {
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase; }
-
-.titulo {
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 34px;
-  letter-spacing: 3px;
-  line-height: 1;
-  margin: 0 0 20px 0;
-  padding: 2px 0 2px 0;
-  text-transform: uppercase; }
-
-ul {
-  list-style: none;
-  padding: 0; }
+  max-width: 100%; }
+  .Container1 h1 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase; }
 
 .WAYNE {
   padding: 15px; }
+  .WAYNE .titulo {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    letter-spacing: 3px;
+    line-height: 1;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    text-transform: uppercase; }
+  .WAYNE p {
+    color: #ecf5ff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0px; }
 
 .USEFUL-LINKS {
   color: white;
@@ -58,6 +58,9 @@ ul {
     color: white;
     line-height: 35px;
     text-decoration: none; }
+  .USEFUL-LINKS ul {
+    list-style: none;
+    padding: 0; }
 
 .CONTACT-US {
   color: white;
@@ -70,25 +73,22 @@ ul {
     margin: 0; }
   .CONTACT-US .div-redes {
     margin: 25px 0 25px; }
-
-footer {
-  background-color: #004a99;
-  display: flex;
-  flex-direction: column;
-  width: 100%; }
-
-.iconos {
-  background-color: #007bff;
-  border-radius: 50%;
-  color: white;
-  display: inline-block;
-  font-size: 20px;
-  height: 32px;
-  /*line-height: 2;*/
-  margin-right: 5px;
-  padding: 2px 2px;
-  text-align: center;
-  width: 32px; }
+  .CONTACT-US .iconos {
+    align-items: center;
+    background-color: #007bff;
+    border-radius: 50%;
+    color: white;
+    display: inline-flex;
+    height: 32px;
+    font-size: 20px;
+    justify-content: center;
+    margin-right: 5px;
+    padding: 2px 2px;
+    text-align: center;
+    width: 32px; }
+    .CONTACT-US .iconos:hover {
+      background-color: #0067d5;
+      opacity: 30%; }
 
 .OUR-NEWSLETTER {
   color: white;
@@ -97,103 +97,16 @@ footer {
   line-height: 24px;
   margin-bottom: 0;
   margin-left: 15px; }
-
-form {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  form .email {
-    border: 0;
-    font-family: "Open Sans", sans-serif;
-    padding: 7px 8px;
+  .OUR-NEWSLETTER form {
     margin: 0;
-    width: 60%; }
-  form .subscribe {
-    background: #007bff;
-    border: 0;
-    color: white;
-    cursor: pointer;
-    font-family: "Open Sans", sans-serif;
-    text-align: center;
-    transition: 0.3s;
-    padding: 7px 0;
-    width: 30%; }
-
-.Container2 {
-  background-color: #00428a;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  width: 100%;
-  height: 110px;
-  position: relative;
-  top: 15px; }
-  .Container2 p {
-    text-align: center; }
-  .Container2 .circle {
-    background-color: #007bff;
-    border-radius: 50%;
-    height: 45px;
-    position: absolute;
-    width: 45px; }
-  .Container2 .fa-chevron-up {
-    color: white;
-    left: 18px;
-    position: relative;
-    top: 15px; }
-  .Container2 .COPYRIGHT {
-    color: white;
-    font-family: "open Sans" sans-serif;
-    font-size: 14px;
-    line-height: 24px;
-    margin-bottom: 0; }
-
-@media (min-width: 576px) and (min-width: 576px) {
-  .WAYNE {
-    padding-left: 40px;
-    padding-right: 20px; }
-  .USEFUL-LINKS {
-    padding-left: 40px; }
-  .CONTACT-US {
-    padding-left: 40px; }
-  .OUR-NEWSLETTER {
-    padding-left: 40px;
-    margin: 0;
-    padding-right: 40px; }
-    .OUR-NEWSLETTER p {
-      margin: 0 0 30px 0;
-      padding: 0; }
-    .OUR-NEWSLETTER .email {
-      width: 65%; }
-  .redes {
-    font-size: 18px;
-    text-align: center;
-    margin: 0;
-    padding: 0; }
-  .Container1 {
-    padding: 60px 0 30px 0; }
-  .Container2 p {
-    margin: 0;
-    padding: 0;
-    font-size: 13px; }
-  .Container2 .COPYRIGHT {
-    margin: 25px; }
-  .Container2 .circle {
-    width: 45px;
-    height: 45px; }
-  form {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    form .email {
+    display: flex; }
+    .OUR-NEWSLETTER form .email {
       border: 0;
       font-family: "Open Sans", sans-serif;
       padding: 7px 8px;
-      margin: -14px;
+      margin: 0;
       width: 60%; }
-    form .subscribe {
+    .OUR-NEWSLETTER form .subscribe {
       background: #007bff;
       border: 0;
       color: white;
@@ -202,13 +115,125 @@ form {
       text-align: center;
       transition: 0.3s;
       padding: 7px 0;
-      width: 48%; } }
+      width: 34%; }
+
+.Container2 {
+  background-color: #00428a;
+  display: flex;
+  height: 110px;
+  justify-content: center;
+  padding: 0;
+  width: 100%;
+  position: relative;
+  top: 15px; }
+  .Container2 p {
+    text-align: center; }
+  .Container2 .COPYRIGHT {
+    color: white;
+    font-family: "open Sans" sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0; }
+
+.circle {
+  align-items: center;
+  background-color: #007bff;
+  border-radius: 50%;
+  bottom: 20px;
+  display: flex;
+  height: 45px;
+  justify-content: center;
+  position: fixed;
+  right: 20px;
+  width: 45px;
+  cursor: pointer; }
+  .circle .fa-chevron-up {
+    color: white; }
+
+@media (min-width: 576px) and (min-width: 576px) {
+  .Container1 {
+    padding: 60px 0 30px 0;
+    max-width: 80%; }
+  .WAYNE {
+    padding-left: 40px;
+    padding-right: 20px; }
+  .USEFUL-LINKS {
+    padding-left: 40px; }
+  .CONTACT-US {
+    padding-left: 40px; }
+    .CONTACT-US .redes {
+      font-size: 18px;
+      text-align: center;
+      margin: 0;
+      padding: 0; }
+  .OUR-NEWSLETTER {
+    padding-left: 40px;
+    margin: 0;
+    padding-right: 40px; }
+    .OUR-NEWSLETTER p {
+      margin: 0 0 30px 0;
+      padding: 0; }
+    .OUR-NEWSLETTER form {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .OUR-NEWSLETTER form .email {
+        border: 0;
+        font-family: "Open Sans", sans-serif;
+        padding: 7px 8px;
+        /* margin: -14px;*/
+        width: 60%; }
+      .OUR-NEWSLETTER form .subscribe {
+        background: #007bff;
+        border: 0;
+        color: white;
+        cursor: pointer;
+        font-family: "Open Sans", sans-serif;
+        text-align: center;
+        transition: 0.3s;
+        padding: 7px 0;
+        width: 40%; }
+  .Container2 p {
+    margin: 0;
+    padding: 0;
+    font-size: 13px; }
+  .Container2 .COPYRIGHT {
+    margin: 25px; }
+  .Container2 .circle {
+    width: 45px;
+    height: 45px; } }
 
 /*media*/
-/*@include breakpoint-tablet-3 768 */
-/*@include breakpoint-desktop-1 992*/
+@media (min-width: 768px) and (min-width: 768px) {
+  .Container1 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 768px; }
+  .WAYNE {
+    padding-top: 0;
+    width: 45%; }
+  .OUR-NEWSLETTER {
+    padding: 0 20px 15px 60px;
+    width: 35%; }
+  .CONTACT-US {
+    width: 40%;
+    padding: 0 20px 15px 40px; }
+  .USEFUL-LINKS {
+    padding: 0 0 15px 25px; } }
+
+@media (min-width: 992px) {
+  .Container1 {
+    max-width: 100%;
+    justify-content: center; }
+  .WAYNE {
+    width: 20%; }
+  .CONTACT-US {
+    width: 20%; }
+  .OUR-NEWSLETTER {
+    width: 20%; } }
+
 @media (min-width: 1200px) and (min-width: 1200px) {
-  /*media*/
   body {
     margin: 0; }
   footer {
@@ -216,16 +241,6 @@ form {
     display: flex;
     flex-direction: column;
     width: 100%; }
-  h1 {
-    color: #fff;
-    font-size: 14px;
-    font-weight: bold;
-    padding-bottom: 10px;
-    text-transform: uppercase; }
-  ul {
-    list-style: none; }
-  p {
-    line-height: 26px; }
   .Container1 {
     background-color: #004a99;
     display: flex;
@@ -234,6 +249,14 @@ form {
     justify-content: center;
     padding: 60px 0 30px 0;
     width: 100%; }
+    .Container1 h1 {
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      padding-bottom: 10px;
+      text-transform: uppercase; }
+    .Container1 p {
+      line-height: 26px; }
   .WAYNE {
     color: white;
     font-family: "open Sans" sans-serif;
@@ -242,16 +265,16 @@ form {
     margin-bottom: 0;
     width: 23%;
     margin-right: 30px; }
-  .titulo {
-    color: #fff;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 34px;
-    letter-spacing: 3px;
-    line-height: 1;
-    margin: 0 0 20px 0;
-    padding: 2px 0 2px 0;
-    text-transform: uppercase; }
+    .WAYNE .titulo {
+      color: #fff;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      font-size: 34px;
+      letter-spacing: 3px;
+      line-height: 1;
+      margin: 0 0 20px 0;
+      padding: 2px 0 2px 0;
+      text-transform: uppercase; }
   .USEFUL-LINKS {
     color: white;
     font-family: "open Sans" sans-serif;
@@ -259,12 +282,15 @@ form {
     line-height: 24px;
     margin-bottom: 0;
     width: 15%; }
+    .USEFUL-LINKS ul {
+      list-style: none;
+      padding: 0; }
     .USEFUL-LINKS .links {
       color: white;
       line-height: 35px;
       text-decoration: none; }
-  ul {
-    padding: 0; } }
+      .USEFUL-LINKS .links:hover {
+        color: #74b5fc; } }
 
 @media (min-width: 1200px) {
   .CONTACT-US {
@@ -280,77 +306,73 @@ form {
     .CONTACT-US .div-redes {
       margin: 25px 0 25px; }
     .CONTACT-US .iconos {
+      align-items: center;
       background-color: #007bff;
       border-radius: 50%;
       color: white;
-      display: inline-block;
-      font-size: 20px;
+      display: inline-flex;
       height: 32px;
-      /*line-height: 2;*/
+      font-size: 20px;
+      justify-content: center;
       margin-right: 5px;
       padding: 2px 2px;
       text-align: center;
       width: 32px; }
-  .redes {
-    background-color: #007bff;
-    border-radius: 50px;
-    height: 36px;
-    width: 36px;
-    height: 30px; }
+      .CONTACT-US .iconos:hover {
+        background-color: #0067d5;
+        opacity: 30%; }
   .OUR-NEWSLETTER {
     color: white;
     font-family: "open Sans" sans-serif;
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 0;
-    width: 17%; }
-  .Container2 {
-    background-color: #004a99;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 60px 0 30px 0;
-    width: 100%;
-    background-color: #00428a;
-    height: 35px;
-    padding: 20px 0 50px 0;
-    position: relative; }
-    .Container2 p {
-      margin: 0;
-      padding: 0;
-      font-size: 13px; }
-    .Container2 .COPYRIGHT {
+    width: 17%;
+    padding: 0; }
+    .OUR-NEWSLETTER .email {
+      border: 0;
+      font-family: "Open Sans", sans-serif;
+      padding: 6px 8px;
+      width: 75%;
+      margin: 0; }
+    .OUR-NEWSLETTER .subscribe {
+      background: #007bff;
+      border: 0;
       color: white;
-      font-family: "open Sans" sans-serif;
-      font-size: 14px;
-      line-height: 24px;
-      margin-bottom: 0; }
-    .Container2 .circle {
-      width: 45px;
-      height: 45px; }
-  /*form {
-    display: flex;
+      cursor: pointer;
+      font-family: "Open Sans", sans-serif;
+      text-align: center;
+      transition: 0.3s;
+      padding: 6px 0;
+      width: 35%; }
+      .OUR-NEWSLETTER .subscribe:hover {
+        background-color: #0067d5; } }
+
+.Container2 {
+  background-color: #004a99;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 60px 0 30px 0;
+  width: 100%;
+  background-color: #00428a;
+  height: 35px;
+  padding: 20px 0 50px 0;
+  position: relative; }
+  .Container2 p {
     margin: 0;
-    justify-content: center;
-    align-items: center;
-}*/
-  .email {
-    border: 0;
-    font-family: "Open Sans", sans-serif;
-    padding: 6px 8px;
-    width: 75%;
-    margin: 0; }
-  .subscribe {
-    background: #007bff;
-    border: 0;
+    padding: 0;
+    font-size: 13px; }
+  .Container2 .COPYRIGHT {
     color: white;
-    cursor: pointer;
-    font-family: "Open Sans", sans-serif;
-    text-align: center;
-    transition: 0.3s;
-    padding: 6px 0;
-    width: 35%; } }
+    font-family: "open Sans" sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0; }
+  .Container2 .circle {
+    width: 45px;
+    height: 45px; }
 
 body {
   margin: 0;
