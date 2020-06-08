@@ -60,9 +60,9 @@
     display: inline-block;
     width: 12px;
     height: 12px;
-    border: solid 2px lightblue;
+    border: solid 2px transparent;
     border-radius: 50%;
-    background-color: transparent;
+    background-color: lightgrey;
     margin: 5vh 6px 0 6px;
     z-index: 2;
     cursor: pointer;
@@ -70,11 +70,11 @@
   }
   
   input:checked + label{
-    background-color: white;
+    background-color: #007bff;
   }
   
   input:focus + label{
-    box-shadow: 0 0 0 2px #dddddd, 0 0 18px white;
+    box-shadow: 0 0 0 2px, 0 0 18px white;
   }
 
 
