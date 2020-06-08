@@ -6,6 +6,19 @@
    align-content: center;
    flex-direction: column;   
    padding: 5% 2%;
+   h2 {
+    font-weight: 500;
+    align-self: center;
+   }
+   h3 {
+    font-size: 20px;
+    font-weight: bold;
+    @include breakpoint-tablet-desktop-first {
+        text-align: center;
+
+        }
+    }
+}
     
 figure {
     position: relative;
@@ -45,17 +58,8 @@ figure {
     text-align: justify;
    }
 }
-h2 {
-    align-self: center;
-}
-h3 {
-    font-size: 20px;
-    font-weight: bold;
-    @include breakpoint-tablet-desktop-first {
-        text-align: center;
 
-}
-}
+
 .testimonials-cards-container{
     overflow: hidden;
     margin: 0 auto;

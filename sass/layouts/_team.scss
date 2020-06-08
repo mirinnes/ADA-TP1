@@ -6,10 +6,7 @@
 
 }
 
-h2{
-    font-family: $title-font;
-    font-size: $title-h2;
-}
+
 
 .imgMember{
     
@@ -38,11 +35,8 @@ h2{
 }
 
 
-///PONER AQUI BREAKPOINTS//// 768 max width/// Crear otro Mixin
 
-@include breakpoint-tablet {
-    background-color: red;
-}
+
 
 #team {
     /*display: flex;
@@ -55,5 +49,9 @@ h2{
     @include breakpoint-mobile-1;
     @include breakpoint-tablet;
     @include breakpoint-desktop;
-
+    h2 {
+        font-weight: 500; 
+        font-family: $title-font;
+    font-size: $title-h2;
+    }
 }
