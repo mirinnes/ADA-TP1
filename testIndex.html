@@ -4,15 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wayne</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800|Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
 
-   <link rel="stylesheet" href="css/styles.css">
-    
+    <!----------------------------------------IMPORTO FONTS-->
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800|Open+Sans:400,600,700,800&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
 <body>
+
+    <div class="team-icons-container">
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-google-plus-g"></i></a>
+        <a href=""><i class="fab fa-linkedin-in"></i></a>
+
+
+    </div>
 
     <header>
         <!--El menu de responsive, dejar en stand by-->
@@ -47,26 +59,33 @@
     <!----------------------------------------TESTIMONIALS-->
     <section id="Testimonials">
         <h2>Testimonials</h2>
-        <div class="testimonials-cards-container">
-            <figure>
-                <div class="testimonialCard" id="one">
-                    <div class="img-container">
-                        <img src="img/testimonial-1.jpg" alt="" class="">
-                    </div>
-                    <div class="textContainer">
-                        <h3>Saul Goodman</h3>
-                        <h4>Ceo & Founder</h4>
-                        <p class="testimonialDescription">
-                            Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
-                            Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                        </p>
-
-
-                    </div>
-
+        <div class="container">
+            <figure>   
+            <input type="radio" id="trigger1" name="slider">
+                <label for="trigger1"></label>
+                <div class="slide bg1">
+                        <div class="testimonialCard" id="one">
+                                <div class="img-container">
+                                    <img src="img/testimonial-1.jpg" alt="" class="">
+                                </div>
+                                <div class="textContainer">
+                                    <h3>Saul Goodman</h3>
+                                    <h4>Ceo & Founder</h4>
+                                    <p class="testimonialDescription">
+                                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
+                                        Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                                    </p>
+            
+            
+                                </div>
+            
+                            </div>
                 </div>
             </figure>
             <figure>
+                    <input type="radio" id="trigger2" name="slider" checked autofocus>
+                    <label for="trigger2"></label>
+                    <div class="slide bg2">
                 <div class="testimonialCard" id="two">
                     <div class="img-container">
                         <img src="img/testimonial-2.jpg" alt="" class="">
@@ -84,9 +103,12 @@
                     </div>
 
                 </div>
-
+            </div>
             </figure>
             <figure>
+                    <input type="radio" id="trigger3" name="slider">
+                    <label for="trigger3"></label>
+                    <div class="slide bg3">
                 <div class="testimonialCard" id="three">
                     <div class="img-container">
                         <img src="img/testimonial-3.jpg" alt="" class="">
@@ -104,8 +126,12 @@
                     </div>
 
                 </div>
+            </div>
             </figure>
             <figure>
+                    <input type="radio" id="trigger4" name="slider">
+                    <label for="trigger4"></label>
+                    <div class="slide bg4">
                 <div class="testimonialCard" id="four">
                     <div class="img-container">
                         <img src="img/testimonial-4.jpg" alt="" class="">
@@ -123,9 +149,12 @@
 
                     </div>
                 </div>
-
+            </div>
             </figure>
             <figure>
+                    <input type="radio" id="trigger5" name="slider">
+                    <label for="trigger5"></label>
+                    <div class="slide bg5">
                 <div class="testimonialCard" id="five">
                     <div class="img-container">
                         <img src="img/testimonial-5.jpg" alt="" class="">
@@ -143,27 +172,8 @@
 
                     </div>
                 </div>
+            </div>
             </figure>
-        </div>
-        <div class="testimonial-buttons">
-        <input type="radio" id="trigger1" name="slider"checked autofocus>
-        <label for="trigger1"></label>
-        
-        <input type="radio" id="trigger2" name="slider">
-        <label for="trigger2"></label>
-        
-        
-        <input type="radio" id="trigger3" name="slider">
-        <label for="trigger3"></label>
-      
-        
-        <input type="radio" id="trigger4" name="slider">
-        <label for="trigger4"></label>
-        
-        
-        <input type="radio" id="trigger5" name="slider">
-        <label for="trigger5"></label>
-        
         </div>
     </section>
 
@@ -175,82 +185,110 @@
         <div class="team-cards-container">
             <div class="team-card">
                 <div class="team-img-container">
-                    <img src="img/team-01.jpg" class="imgMember" alt="BenAffleck">
-                    <div class="team-bg"></div>
+                    <img src="/img/team-01.jpg" class="imgMember" alt="BenAffleck">
+                </div>
+                <div class="team-bg"></div>
                 <div class="team-description-container">
                     <h4>Ben Affleck</h4>
                     <span>Chief Executive Officer</span>
                     <div class="team-icons-container">
-                        <a href=""><i class="fab fa-twitter"></i></a>
-                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                        <a href=""><i class="fab fa-google-plus-g"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
 
 
                     </div>
                 </div>
-                </div>
-                
             </div>
             <div class="team-card">
                 <div class="team-img-container">
-                    <img src="img/team-02.jpg" class="imgMember" alt="ChristianBale">
-                    <div class="team-bg"></div>
+                    <img src="/img/team-02.jpg" class="imgMember" alt="ChristianBale">
+                </div>
+                <div class="team-bg"></div>
                 <div class="team-description-container">
                     <h4>Christian Bale</h4>
                     <span>Product Manager</span>
                     <div class="team-icons-container">
-                        <a href=""><i class="fab fa-twitter"></i></a>
-                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                        <a href=""><i class="fab fa-google-plus-g"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
 
 
                     </div>
                 </div>
-                </div>
-                
             </div>
 
             <div class="team-card">
                 <div class="team-img-container">
-                    <img src="img/team-03.jpg" class="imgMember" alt="MichaelKeaton">
-                    <div class="team-bg"></div>
+                    <img src="/img/team-03.jpg" class="imgMember" alt="MichaelKeaton">
+                </div>
+                <div class="team-bg"></div>
                 <div class="team-description-container">
                     <h4>Michael Keaton</h4>
                     <span>CTO</span>
                     <div class="team-icons-container">
-                        <a href=""><i class="fab fa-twitter"></i></a>
-                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                        <a href=""><i class="fab fa-google-plus-g"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
 
 
                     </div>
                 </div>
-                </div>
-                
             </div>
 
 
             <div class="team-card">
                 <div class="team-img-container">
-                    <img src="img/team-04.jpg" class="imgMember" alt="AdamWest">
-                    <div class="team-bg"></div>
+                    <img src="/img/team-04.jpg" class="imgMember" alt="AdamWest">
+                </div>
+                <div class="team-bg"></div>
                 <div class="team-description-container">
                     <h4>Adam West</h4>
                     <span>Accountant</span>
                     <div class="team-icons-container">
-                        <a href=""><i class="fab fa-twitter"></i></a>
-                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                        <a href=""><i class="fab fa-google-plus-g"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
 
 
                     </div>
                 </div>
-                </div>
-                
             </div>
         </div>
         </div>

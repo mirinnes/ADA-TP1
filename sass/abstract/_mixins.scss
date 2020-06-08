@@ -71,4 +71,29 @@
         @content;
     }
 }
-// //////////////////////////////////////////////////////
+
+@mixin breakpoint-tablet-desktop-first {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+@mixin breakpoint-desktop-first {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+// //////////////////////////////////////////////////////Cards
+
+@mixin teamCards {
+    width: 255px;
+    height: 255px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+///////Positions
+@mixin flex($flex-direction: row, $justify-content: center, $align-items: center) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}

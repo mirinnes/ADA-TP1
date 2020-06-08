@@ -1,0 +1,59 @@
+
+
+.member{
+    width: 50px;
+    margin: 0;
+
+}
+
+h2{
+    font-family: $title-font;
+    font-size: $title-h2;
+}
+
+.imgMember{
+    
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    align-self: center;
+}
+.team-cards-container{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    @include breakpoint-desktop-first {
+        display: flex;
+        flex-wrap: wrap;
+           }
+  }
+
+.team-Members:hover:after {
+    z-index: 1; 
+    background: rgba(0,0,0,0.75);
+}
+
+
+///PONER AQUI BREAKPOINTS//// 768 max width/// Crear otro Mixin
+
+@include breakpoint-tablet {
+    background-color: red;
+}
+
+#team {
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;*/
+    padding: 5%;
+    @include flex ($flex-direction: column);
+    @include breakpoint-mobile-1;
+    @include breakpoint-tablet;
+    @include breakpoint-desktop;
+
+}
