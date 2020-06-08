@@ -39,6 +39,43 @@
         left: -400%;
     }
 }
+.testimonial-buttons{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    align-self: center;
+  }
+  
+  input {
+    position: absolute;  
+    opacity: 0;
+    //margin-top: 95vh;
+    cursor: pointer;
+  }
+  
+  label {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: solid 2px lightblue;
+    border-radius: 50%;
+    background-color: transparent;
+    margin: 5vh 6px 0 6px;
+    z-index: 2;
+    cursor: pointer;
+    transition-duration: .4s;
+  }
+  
+  input:checked + label{
+    background-color: white;
+  }
+  
+  input:focus + label{
+    box-shadow: 0 0 0 2px #dddddd, 0 0 18px white;
+  }
 
 
 
