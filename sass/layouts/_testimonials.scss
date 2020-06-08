@@ -8,6 +8,7 @@
    padding: 5% 2%;
    h2 {
     font-weight: 500;
+    font-size: $title-h2;
     align-self: center;
    }
    h3 {
@@ -28,8 +29,8 @@ figure {
     @include breakpoint-tablet-desktop-first {
         width: 500%;
     }
-    }     
-    }
+}     
+    
 
 
 #Testimonials img {
