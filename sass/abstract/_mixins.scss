@@ -71,4 +71,21 @@
         @content;
     }
 }
+
+@mixin breakpoint-tablet-desktop-first {
+        @media (max-width: 768px) {
+                @content;
+       }
+}
+@mixin breakpoint-desktop-first {
+    @media (max-width: 1200px) {
+            @content;
+   }
+}
+
 // //////////////////////////////////////////////////////
+@mixin display-center {
+    display:flex;
+    align-items:center;
+    justify-content:center; 
+}

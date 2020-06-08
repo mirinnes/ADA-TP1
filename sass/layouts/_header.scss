@@ -1,0 +1,52 @@
+@import "../abstract/variables";
+.main-header {
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    
+    
+    .hamburguesa{
+        @include breakpoint-tablet-desktop-first{
+            font-size: $font-xl;
+            display: inline;
+            a:visited{
+                color: currentColor;
+            }
+        }
+        display: none;
+    }
+    
+    .main-loguito{
+        img {
+            height: auto;
+            padding: 0;
+            margin: 7px 0;
+            max-height: 26px;
+
+        }
+    }
+    .main-nav {
+        @include breakpoint-tablet-desktop-first{
+            display: none;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: $margin-s;
+            padding: $padding-s;
+            text-decoration: none; 
+            list-style: none;    
+            a{
+                color: $darkblue;
+                text-decoration: none;
+                transition: all 0.3s linear;
+                &:hover{
+                    color:$blue;    
+                }
+            }   
+        }
+    }
+ 
+}
+    
