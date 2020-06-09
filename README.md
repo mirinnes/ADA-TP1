@@ -7,7 +7,6 @@ PENDIENTE:
 
 
       > Linkear las secciones con el nav del header
-     
       > Fijar la position del header para q no se vaya al scrollear
 
 
