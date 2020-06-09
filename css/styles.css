@@ -1372,6 +1372,116 @@ footer {
       .clients-container .Logos-clients .clients img:hover {
         transform: scale(1.2); }
 
+/*-------------------------CONTACT-US--------------*/
+.contactus {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.204);
+  padding-top: 40px;
+  padding-bottom: 50px;
+  text-align: center; }
+  .contactus .title {
+    text-align: center;
+    padding: 15px 0; }
+    .contactus .title h1 {
+      font-size: 36px;
+      font-weight: 500;
+      color: #283d50; }
+  @media (min-width: 990px) {
+    .contactus .main {
+      display: flex;
+      align-items: end;
+      justify-content: space-between; } }
+  .contactus .main .mapouter {
+    padding: 20px 0;
+    margin: 0;
+    height: 328px; }
+    .contactus .main .mapouter .gmap_canvas {
+      overflow: hidden;
+      background: none !important;
+      height: 328px; }
+  .contactus .info {
+    margin-bottom: 30px; }
+    @media (min-width: 768px) {
+      .contactus .info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; } }
+    @media (min-width: 990px) {
+      .contactus .info {
+        margin-bottom: 0; } }
+    .contactus .info .row {
+      padding: 15px 0; }
+      .contactus .info .row:nth-child(2) {
+        padding: 25px 0; }
+        @media (min-width: 768px) {
+          .contactus .info .row:nth-child(2) {
+            padding: 0px 10px; } }
+      @media (min-width: 990px) {
+        .contactus .info .row {
+          width: 30%; } }
+      .contactus .info .row.contentInfo {
+        display: flex;
+        color: #283d50; }
+        @media (min-width: 768px) {
+          .contactus .info .row.contentInfo {
+            display: inline-flex;
+            align-items: center;
+            padding: 0px 10px; } }
+        .contactus .info .row.contentInfo i {
+          color: #007bff;
+          font-size: 25px;
+          padding-right: 16px; }
+        .contactus .info .row.contentInfo p {
+          font-size: 14px;
+          margin: 0; }
+  .contactus #form {
+    display: flex;
+    flex-direction: column; }
+    @media (min-width: 990px) {
+      .contactus #form .upper-row {
+        display: flex;
+        justify-content: space-between; } }
+    .contactus #form .upper-row input:nth-child(1), .contactus #form .upper-row input:nth-child(2) {
+      width: 100%; }
+      @media (min-width: 990px) {
+        .contactus #form .upper-row input:nth-child(1), .contactus #form .upper-row input:nth-child(2) {
+          width: 49%; } }
+    .contactus #form input {
+      border: 1px solid #49505742;
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px; }
+      .contactus #form input:active, .contactus #form input:focus {
+        border: 1px solid #80bdff;
+        outline: 0;
+        box-shadow: none; }
+    .contactus #form .down-row input {
+      width: 100%; }
+      .contactus #form .down-row input:nth-child(2) {
+        height: 150px; }
+    .contactus #form .row {
+      margin: 8px 0;
+      padding: 10px;
+      padding-left: 12px; }
+  @media (min-width: 990px) {
+    .contactus .mapouter, .contactus #form {
+      width: 49%; } }
+  .contactus .sendMessage {
+    font-family: "Open Sans", sans-serif;
+    width: 170px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    background-color: #007bff;
+    box-sizing: border-box;
+    color: #ffffff;
+    padding: 8px 30px;
+    font-size: 16px;
+    transition: all 0.2s ease-out; }
+    .contactus .sendMessage:hover {
+      background-color: #006adb;
+      transition: all 0.2s ease-in; }
+
+/*------------------------------------------------------*/
+
 body {
   margin: 0;
   color: #444;
