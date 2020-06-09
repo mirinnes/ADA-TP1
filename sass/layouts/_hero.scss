@@ -1,0 +1,111 @@
+/*-----------------------------------Hero-comienzo-----*/
+#main-hero{
+    background-color: $middleblue;
+    background-size: cover;
+    display: block;
+    padding: 200px 0 120px 0;
+    position: relative;
+    @include breakpoint-tablet-desktop-first{
+        padding:50px 0 75px 0;
+    }
+    .main-container{ 
+        @include breakpoint-tablet-desktop-first{
+            display: flex;
+            flex-direction: column;
+        }
+        display: flex;
+        align-items: center;
+        box-sizing: $box-sizing;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 50px;
+        padding-left: 50px;
+        width: 100%;
+    }
+    .main-img{
+        border-style: none;
+        display: inline-block;
+        margin: 20px;
+        line-height: 1.5;
+        width: 50%;
+        &.i1{
+            display: none;
+        }
+        @include breakpoint-tablet-desktop-first{
+            margin: 0 auto 25px auto;
+            vertical-align: middle;
+            width: 80%;
+            &.i1{
+                display: inline-block;
+            }
+            &.i2{
+                display: none ;
+            }
+        }
+        @include breakpoint-tablet-desktop-first{
+            display: block;
+        }
+        img{
+            width:100% ;
+        }
+    }
+    .main-text{
+        color: $white;
+        display: inline-block;
+        font-family: $title-font;
+        font-size: $title-h2;
+        font-weight: 700;
+        line-height: 1.5;
+        margin: 0 0 20px 0;
+        padding: 0;
+        width: 50%;
+        @include breakpoint-tablet-desktop-first{
+            float: none;
+            font-size: $title-footer;
+            margin: auto;
+            text-align: center;
+            justify-content: center;
+            display: block;
+            width: 80%;
+            
+        }
+        h2{
+            font-size: 45px;
+        }
+        div{
+            display: flex;
+            @include breakpoint-tablet-desktop-first{
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    .main-span{
+        color:#74b5fc;
+        text-decoration: underline;
+    }
+    .main-button-link {
+        @include breakpoint-tablet-desktop-first{
+            text-align: center;
+        }
+        border-radius: 50px;
+        background: $middleblue;
+        border: 2px solid $white;
+        color: $white;
+        display: inline-block;
+        font-family: $title-font;
+        font-size: $font-s;
+        font-weight: 600;
+        margin: 0 $margin-l $margin-l 0;
+        letter-spacing: 1px;
+        padding: $padding-m  $padding-l;
+        transition:all 0,3s linear;
+        translate: all 0.3s;
+        text-decoration: none;
+        &:hover{
+            background: $blue;
+        }
+    }
+}
+/*-----------------------------------Hero-final-----*/

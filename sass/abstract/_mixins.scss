@@ -1,5 +1,3 @@
-@import "./variables";
-
 // ////////////////////////// Estilos de Botones
 // ////////////////////////// Mixin del Boton con fondo y su hover
 @mixin button-withBackground(
@@ -53,15 +51,22 @@
 }
 
 // ////////////////////////////////////////// Break Points
+/*footer*/
+@mixin breakpoint-mobile-2 {
+    @media (min-width: 320px ){
+    }
+}
 
 @mixin breakpoint-mobile-1 {
     @media (min-width: 414px) {
         @content;
     }
 }
-/*footer*/
-@mixin breakpoint-mobile-2 {
-    @media (min-width: 320px ){
+
+
+@mixin breakpoint-tablet-2 {
+    @media (min-width: 576px){
+        @content;
     }
 }
 
@@ -70,9 +75,15 @@
         @content;
     }
 }
-/*footer*/
-@mixin breakpoint-tablet-2 {
-    @media (min-width: 576px ){
+
+@mixin breakpoint-tablet-desktop-first {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin breakpoint-desktop-1{
+    @media (min-width: 992px) {
         @content;
     }
 }
@@ -82,13 +93,48 @@
         @content;
     }
 }
-@mixin breakpoint-desktop-1{
-    @media (min-width: 992px) {
-        @content;
-    }
+@mixin breakpoint-desktop-first {
+    @media (max-width: 1200px) {
+            @content;
+   }
 }
 
-// //////////////////////////////////////////////////////
+
+
+
+
+
+
+
+/*-----------------------------------
+          ORNE MIXINS
+-------------------------------------*/
+@mixin h1 {
+    color: $blackbold;
+    display: flex;
+    font-family: $title-font;
+    font-size: 36px;
+    font-weight: 500;
+    justify-content: center;
+    margin: 5px;
+    text-align: center;
+}
+
+@mixin texto {
+    color: $mediumgray;
+    display: flex;
+    align-self: center;
+    font-size: 15px;
+    font-family: $normal-font;
+    justify-content: center;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 0;
+    padding: 0 0 60px;
+    text-align: center;
+}
+
+// /////////////////////////////////////////////Footer
 @mixin footer-redes {
     background-color: $blue; 
     border-radius: 50px; 
@@ -160,3 +206,30 @@
                       } 
             } 
 }
+
+
+/*-----------------------------------
+          CELE MIXINS
+-------------------------------------*/
+// //////////////////////////////////////////////////////Cards
+@mixin teamCards {
+    width: 255px;
+    height: 255px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+  
+// //////////////////////////////////////////////////////Positions
+@mixin flex($flex-direction: row, $justify-content: center, $align-items: center) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+// //////////////////////////////////////////////////////Display
+@mixin display-center {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+} 
