@@ -1,12 +1,10 @@
 
-
+/*-----------------------------------Teams-comienzo-----*/
 .member{
     width: 50px;
     margin: 0;
 
 }
-
-
 
 .imgMember{
     
@@ -15,6 +13,7 @@
     box-sizing: border-box;
     align-self: center;
 }
+
 .team-cards-container{
 
     box-sizing: border-box;
@@ -34,16 +33,7 @@
     background: rgba(0,0,0,0.75);
 }
 
-
-
-
-
 #team {
-    /*display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;*/
     padding: 5%;
     @include flex ($flex-direction: column);
     @include breakpoint-mobile-1;
@@ -55,3 +45,4 @@
         font-size: $title-h2;
     }
 }
+/*-----------------------------------Teams-termina-----*/

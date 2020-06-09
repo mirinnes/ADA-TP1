@@ -1,12 +1,11 @@
-@import "../abstract/variables";
+/*-----------------------------------Header-comienzo-----*/
 .main-header {
     align-items: center;
     flex-direction: row;
     display: flex;
     justify-content: space-around;
-    
-    
     .hamburguesa{
+        display: none;
         @include breakpoint-tablet-desktop-first{
             font-size: $font-xl;
             display: inline;
@@ -14,7 +13,6 @@
                 color: currentColor;
             }
         }
-        display: none;
     }
     
     .main-loguito{
@@ -26,6 +24,7 @@
 
         }
     }
+    
     .main-nav {
         @include breakpoint-tablet-desktop-first{
             display: none;
@@ -49,4 +48,4 @@
     }
  
 }
-    
+/*-----------------------------------Header-final-----*/

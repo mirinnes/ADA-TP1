@@ -1,16 +1,11 @@
-@import "../abstract/variables";
-@import "../abstract/mixins";
+/*------------------------------------------------
+               MENU MOBILE
+------------------------------------------------*/
 #contenedor{
     display: none;
     position: absolute;
-@include breakpoint-tablet-desktop-first{
-        background-color:rgb(19, 39, 57);
-        &:target{
-            display: block; 
-            +.menu-mobile{
-                left: 0px;
-             }
-        } 
+    @include breakpoint-tablet-desktop-first{
+        background-color:rgb(19, 39, 57); 
         width: 100%;
         z-index: 1000;
         position: fixed;
@@ -18,6 +13,12 @@
         left: 0;
         height: 100vh;
         opacity: 80%;
+        &:target{
+            display: block; 
+            +.menu-mobile{
+                left: 0px;
+             }
+        }
         
     
         .cruz{
@@ -28,6 +29,7 @@
         }
     }
 }
+
 .menu-mobile{
             transition: all 0.7s ease-in;
             position: fixed;

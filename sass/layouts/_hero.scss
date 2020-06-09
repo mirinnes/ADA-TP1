@@ -1,15 +1,13 @@
-@import "../abstract/variables";
-@import "../abstract/mixins";
-.main-hero{
+/*-----------------------------------Hero-comienzo-----*/
+#main-hero{
     background-color: $middleblue;
     background-size: cover;
     display: block;
     padding: 200px 0 120px 0;
+    position: relative;
     @include breakpoint-tablet-desktop-first{
         padding:50px 0 75px 0;
     }
-    position: relative;
-     
     .main-container{ 
         @include breakpoint-tablet-desktop-first{
             display: flex;
@@ -26,6 +24,11 @@
         width: 100%;
     }
     .main-img{
+        border-style: none;
+        display: inline-block;
+        margin: 20px;
+        line-height: 1.5;
+        width: 50%;
         &.i1{
             display: none;
         }
@@ -40,19 +43,23 @@
                 display: none ;
             }
         }
-        border-style: none;
-        display: inline-block;
         @include breakpoint-tablet-desktop-first{
             display: block;
         }
-        margin: 20px;
-        line-height: 1.5;
-        width: 50%;
         img{
             width:100% ;
         }
     }
     .main-text{
+        color: $white;
+        display: inline-block;
+        font-family: $title-font;
+        font-size: $title-h2;
+        font-weight: 700;
+        line-height: 1.5;
+        margin: 0 0 20px 0;
+        padding: 0;
+        width: 50%;
         @include breakpoint-tablet-desktop-first{
             float: none;
             font-size: $title-footer;
@@ -63,15 +70,6 @@
             width: 80%;
             
         }
-        color: $white;
-        display: inline-block;
-        font-family: $title-font;
-        font-size: $title-h2;
-        font-weight: 700;
-        line-height: 1.5;
-        margin: 0 0 20px 0;
-        padding: 0;
-        width: 50%;
         h2{
             font-size: 45px;
         }
@@ -82,13 +80,10 @@
                 justify-content: center;
             }
         }
-
-
     }
     .main-span{
         color:#74b5fc;
         text-decoration: underline;
-
     }
     .main-button-link {
         @include breakpoint-tablet-desktop-first{
@@ -113,4 +108,4 @@
         }
     }
 }
-
+/*-----------------------------------Hero-final-----*/

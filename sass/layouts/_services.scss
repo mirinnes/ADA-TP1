@@ -1,128 +1,138 @@
-@import "../abstract/mixins";
-@import "../abstract/variables";
-
-.services {
+/*-----------------------------------Services-comienzo-----*/
+#services {
     background-color: $lightblue;
     width: 100%;
-}
-h1 {
-    @include h1;
-}
-.texto{
-    @include texto;
-}
-.contenedor{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 90%;
-}
-.card {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
-    display: flex;
-    justify-content: flex-start;
-    margin: 0 10px 40px 10px;
-    overflow: hidden;
-    padding: 25px;
-    &:hover {
-        transform: translateY(-5px);
-        transition: ease-in-out 0.4s;
+    h1 {
+        @include h1;
+    }
+    .texto{
+        @include texto;
+    }
 
-    .titulocard{
-            color: $blue;
-            cursor: pointer;
-            transition: 0.2s linear;
-}
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 90%;
     }
-    img {
-        align-self: center;
-        height: 70px;
-        margin-left:-30px;
-        width: 50px;
-    }
-    .titulocard{
-        margin: 0 0 15px 40px;
-        margin-bottom: 15px;
-        font-family: $title-font;
-        font-size: 18px;
-        font-weight: 700;
-               }
-            .textcard{
-                color: #444;
-                font-family: $normal-font;
-                font-size: 15px;
-                line-height: 24px;
-                margin: 0 0 0 40px;
-                text-align: left;
+
+    .card {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+        display: flex;
+        justify-content: flex-start;
+        margin: 0 10px 40px 10px;
+        overflow: hidden;
+        padding: 25px;
+        &:hover {
+            transform: translateY(-5px);
+            transition: ease-in-out 0.4s;
+    
+        .titulocard{
+                color: $blue;
+                cursor: pointer;
+                transition: 0.2s linear;
             }
-
-}
-///////////////////////////////////////////
-@include breakpoint-tablet-2 {
-    @media (min-width: 576px){
-.wrap{
-    align-self: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-     }
-.contenedor{
-    max-width: 540px;
         }
-.card{
-    height: 95px;
-    width: 85%;
-     }
-}}
-//////////////////////////////////////////
+        img {
+            align-self: center;
+            height: 70px;
+            margin-left:-30px;
+            width: 50px;
+        }
+        .titulocard{
+            margin: 0 0 15px 40px;
+            margin-bottom: 15px;
+            font-family: $title-font;
+            font-size: 18px;
+            font-weight: 700;
+                   }
+                .textcard{
+                    color: #444;
+                    font-family: $normal-font;
+                    font-size: 15px;
+                    line-height: 24px;
+                    margin: 0 0 0 40px;
+                    text-align: left;
+                }
+    
+    }
+}
+
+
+
+/*///////////////////////////////////////////*/
+#services {
+    @include breakpoint-tablet-2 {
+        @media (min-width: 576px){ 
+            .wrap{
+            align-self: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            }
+        .contenedor{
+            max-width: 540px;
+            }
+        .card{
+            height: 95px;
+            width: 85%;
+            }
+        }
+    }
+}
+
+/*///////////////////////////////////////////*/
 @include breakpoint-tablet {
     @media (min-width: 768px) {
-.services{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    #services{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         p{
             font-size: 15px;
             margin: auto;
             text-align: center;
             width: 50%;
          }
-.contenedor {
-   max-width: 1200px;
+        .contenedor {
+        max-width: 1200px;
+        .wrap {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-right: -15px;
+            margin-left: -15px;
+            }
+        .card{
+            height: 130px;
+            width: 35%;
+                .textcard{
+                   width: 80%;
+                         }
+            }
+            }
+        }
+    }
 }
-    
-             }
-.wrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-right: -15px;
-    margin-left: -15px;
-    }
-.card{
-    height: 130px;
-    width: 35%;
-        .textcard{
-           width: 80%;
-                 }
-    }
-}}
-///////////////////////////////////////////////
+/*///////////////////////////////////////////*/
 @include breakpoint-desktop{
     @media (min-width: 1200px) {
+        #services {    
+            .card{
+                max-width: 50%;
+                padding-bottom: 10px;
+             }
+        }
+    }
+}
+/*///////////////////////////////////////////*/
 
-.card{
-    max-width: 50%;
-    padding-bottom: 10px;
-     }    
-}}
-////////////////////////////////////////////////
-
-/*ME FALTA HOVER Y MOVIMIENTO*/
+//ME FALTA HOVER Y MOVIMIENTO
+/*-----------------------------------Services-final-----*/

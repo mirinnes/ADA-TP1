@@ -1,3 +1,4 @@
+/*-----------------------------------Testimonials-comienzo-----*/
 #Testimonials {
     overflow: hidden;
     background-color: $lightblue; 
@@ -6,11 +7,13 @@
    align-content: center;
    flex-direction: column;   
    padding: 5% 2%;
+   
    h2 {
     font-weight: 500;
     font-size: $title-h2;
     align-self: center;
    }
+   
    h3 {
     font-size: 20px;
     font-weight: bold;
@@ -19,28 +22,41 @@
 
         }
     }
-}
     
-figure {
-    position: relative;
-    width: 520%;
-    margin: 0;
-    left: 0;
-    @include breakpoint-tablet-desktop-first {
-        width: 500%;
+    figure {
+        position: relative;
+        width: 520%;
+        margin: 0;
+        left: 0;
+        @include breakpoint-tablet-desktop-first {
+            width: 500%;
+        }
     }
-}     
-    
 
-
-#Testimonials img {
-    float: left;
-    width: 100%;
-    border-radius: 50%;
-    border-color: white;
-    border-style: solid;  
+    img {
+        float: left;
+        width: 100%;
+        border-radius: 50%;
+        border-color: white;
+        border-style: solid;  
+        
+    }
+    .img-Container {
+        width: 17%;
+        @include breakpoint-tablet-desktop-first {
+            display: inline-block;
+           }
+        }
     
+    .testimonialCard {
+        @include breakpoint-tablet-desktop-first {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+    }
 }
+
 .testimonialCard {
     width: 20%;
     float: left;
@@ -69,18 +85,5 @@ figure {
     max-width: 100%;
 }
 
-#Testimonials .img-Container {
-    width: 17%;
-    @include breakpoint-tablet-desktop-first {
-        display: inline-block;
-       }
-    }
 
-#Testimonials .testimonialCard {
-    @include breakpoint-tablet-desktop-first {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} 
-}
-//text align center//
+/*-----------------------------------Testimonials-termina-----*/

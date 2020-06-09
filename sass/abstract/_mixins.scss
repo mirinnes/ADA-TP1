@@ -1,4 +1,3 @@
-@import "./variables";
 // ////////////////////////// Estilos de Botones
 // ////////////////////////// Mixin del Boton con fondo y su hover
 @mixin button-withBackground(
@@ -136,7 +135,7 @@
     align-items: $align-items;
 }
 
-// //////////////////////////////////////////////////////
+// //////////////////////////////////////////////////////Display
 @mixin display-center {
     display:flex;
     align-items:center;

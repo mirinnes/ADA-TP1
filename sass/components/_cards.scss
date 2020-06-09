@@ -19,6 +19,7 @@
         opacity: 1;
     }
 }
+
 .team-img-container {
     @include teamCards;
     position: relative;
@@ -61,6 +62,7 @@
     }    
 
 }
+
 .team-bg {
     @include teamCards;
     background-color: $darkblue;
