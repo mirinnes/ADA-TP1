@@ -8,11 +8,23 @@
 // ==> Mora Sections
 @import "./layouts/whyChooseUs";
 @import "./layouts/portfolio";
+// ==> Orne Sections
+@import "./layouts/services";
+// ==> Cele Sections
+@import "./layouts/team";
+@import "./layouts/testimonials";
+@import "./components/slider";
+@import "./components/cards";
+// ==> Sofi Sections
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./components/menumobile";
+
 
 body {
     margin: 0;
     color: #444;
-    font-family: "Open Sans", sans-serif;
+   font-family: "Open Sans", sans-serif;
     font-weight: 400;
     line-height: 1.5;
 }
@@ -32,14 +44,5 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 20px 0;
     padding: 0;
 }
-
-// Section
-// ==> Sofi Sections
-@import "./layouts/header";
-@import "./layouts/hero";
-@import "./components/menumobile";
-
-
-
 
 
