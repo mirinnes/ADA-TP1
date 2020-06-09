@@ -1,1 +1,151 @@
 
+/*-------------------------CONTACT-US--------------*/
+.contactus {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.204);
+    padding-top: 40px;
+    padding-bottom: 50px;
+    text-align: center;
+    .title{
+        text-align: center;
+        padding: 15px 0;
+        h1 {
+           font-size: $title-h3;
+           font-weight: 500;
+           color: $blackbold;
+           }
+    
+    }
+
+    .main {
+        @include breakpoint-tablet-2 {
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+        }
+        .mapouter {
+            padding: 20px 0;
+            margin: 0;
+            height:328px;
+            .gmap_canvas {
+                overflow:hidden;
+                background:none!important;
+                height:328px;
+            }
+            }
+
+        }
+        .info {
+            margin-bottom: 30px;
+            @include breakpoint-tablet {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            @include breakpoint-tablet-2 {
+                margin-bottom: 0;
+            }
+            .row {
+                padding: 15px 0;
+                &:nth-child(2) {
+                    padding: 25px 0;
+                    @include breakpoint-tablet {
+                        padding: 0px 10px; 
+                    }
+                }
+                @include breakpoint-tablet-2 {
+                    width: 30%;
+                }
+                &.contentInfo {
+                    display: flex;
+                    color: $blackbold;
+                    @include breakpoint-tablet {
+                        display: inline-flex;
+                        align-items: center;
+                        padding: 0px 10px;
+                    }
+                    i {
+                        color: $blue;
+                        font-size: 25px;
+                        padding-right: 16px;
+                    }
+                    p {
+                        font-size: $font-s;
+                        margin: 0;
+                    }
+                }
+
+            }
+
+        }
+
+        #form {
+            display: flex;
+            flex-direction: column;
+            @include breakpoint-tablet-2 {
+                .upper-row {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+            .upper-row {
+                input {
+                    &:nth-child(1), &:nth-child(2) {
+                        width: 100%;
+                        @include breakpoint-tablet-2 {
+                            width: 49%;
+                        }
+                    }
+                }
+            }
+
+            input{
+                border: 1px solid #49505742;
+                font-family: $normal-font;
+                font-size: $font-s;
+                &:active, &:focus {
+                    border: 1px solid lighten($color: $blue, $amount: 25);
+                    outline: 0;
+                    box-shadow: none;
+                }
+            }
+
+            .down-row {
+                input {
+                    width: 100%;
+                    &:nth-child(2) {
+                        height: 150px;
+                }
+                }
+            }
+
+            
+            
+
+            .row {
+                margin: 8px 0;
+                padding: 10px;
+                padding-left: 12px;
+
+            }
+        }
+
+        .mapouter, #form {
+            @include breakpoint-tablet-2 {
+                width: 49%;
+            }
+        }
+
+        .sendMessage{
+            font-family: $normal-font;
+            width: 170px;
+            cursor: pointer;
+            @include button-withBackground($blue,$white,$font-m,30px,8px);
+            @include button-hover-darken($blue,7)
+
+        }
+
+
+    }
+
+
+/*------------------------------------------------------*/
