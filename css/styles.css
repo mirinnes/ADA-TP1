@@ -1,38 +1,23 @@
 @charset "UTF-8";
-
+/*footer*/
+/*-----------------------------------
+          ORNE MIXINS
+-------------------------------------*/
+/*-----------------------------------
+          CELE MIXINS
+-------------------------------------*/
+/* Fonts */
+/*footer*/
+/*-----------------------------------
+          ORNE MIXINS
+-------------------------------------*/
+/*-----------------------------------
+          CELE MIXINS
+-------------------------------------*/
+/* Fonts */
 body {
-  margin: 0;
-  color: #444;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  line-height: 1.5; }
+  margin: 0; }
 
-/* Estructura General */
-.container {
-  margin: 0 auto;
-
-  box-sizing: border-box;
-  padding-right: 15px;
-  padding-left: 15px;
-  max-width: 100%; }
-  @media (min-width: 414px) {
-    .container {
-      max-width: 413px; } }
-  @media (min-width: 768px) {
-    .container {
-      max-width: 767px; } }
-  @media (min-width: 1200px) {
-    .container {
-      max-width: 1140px; } }
-
-/* Títulos iniciales */
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
-  line-height: 1.2;
-  margin: 0 0 20px 0;
-  padding: 0; }
-
-/*-----------------------------------Footer-comienzo-----*/
 footer {
   background-color: #004a99;
   display: flex;
@@ -45,8 +30,7 @@ footer {
   display: inline-block;
   flex-wrap: wrap;
   max-width: 100%; }
-
- .Container1 h1 {
+  .Container1 h1 {
     color: #fff;
     font-size: 14px;
     font-weight: bold;
@@ -54,8 +38,7 @@ footer {
 
 .WAYNE {
   padding: 15px; }
-
-.WAYNE .titulo {
+  .WAYNE .titulo {
     color: #fff;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
@@ -65,8 +48,7 @@ footer {
     margin: 0 0 20px 0;
     padding: 2px 0 2px 0;
     text-transform: uppercase; }
-
-.WAYNE p {
+  .WAYNE p {
     color: #ecf5ff;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
@@ -80,13 +62,11 @@ footer {
   line-height: 24px;
   margin-bottom: 0;
   padding-left: 15px; }
-
-.USEFUL-LINKS .links {
+  .USEFUL-LINKS .links {
     color: white;
     line-height: 35px;
     text-decoration: none; }
-
-.USEFUL-LINKS ul {
+  .USEFUL-LINKS ul {
     list-style: none;
     padding: 0; }
 
@@ -97,12 +77,11 @@ footer {
   line-height: 24px;
   margin-bottom: 0;
   padding-left: 15px; }
-
-.CONTACT-US p {
+  .CONTACT-US p {
     margin: 0; }
-.CONTACT-US .div-redes {
+  .CONTACT-US .div-redes {
     margin: 25px 0 25px; }
-.CONTACT-US .iconos {
+  .CONTACT-US .iconos {
     align-items: center;
     background-color: #007bff;
     border-radius: 50%;
@@ -115,7 +94,7 @@ footer {
     padding: 2px 2px;
     text-align: center;
     width: 32px; }
- .CONTACT-US .iconos:hover {
+    .CONTACT-US .iconos:hover {
       background-color: #0067d5;
       opacity: 30%; }
 
@@ -126,16 +105,16 @@ footer {
   line-height: 24px;
   margin-bottom: 0;
   margin-left: 15px; }
-.OUR-NEWSLETTER form {
+  .OUR-NEWSLETTER form {
     margin: 0;
     display: flex; }
-.OUR-NEWSLETTER form .email {
+    .OUR-NEWSLETTER form .email {
       border: 0;
       font-family: "Open Sans", sans-serif;
       padding: 7px 8px;
       margin: 0;
       width: 60%; }
-.OUR-NEWSLETTER form .subscribe {
+    .OUR-NEWSLETTER form .subscribe {
       background: #007bff;
       border: 0;
       color: white;
@@ -155,9 +134,9 @@ footer {
   width: 100%;
   position: relative;
   top: 15px; }
-.Container2 p {
+  .Container2 p {
     text-align: center; }
-.Container2 .COPYRIGHT {
+  .Container2 .COPYRIGHT {
     color: white;
     font-family: "open Sans" sans-serif;
     font-size: 14px;
@@ -176,54 +155,44 @@ footer {
   right: 20px;
   width: 45px;
   cursor: pointer; }
-
-.circle .fa-chevron-up {
+  .circle .fa-chevron-up {
     color: white; }
 
 @media (min-width: 576px) and (min-width: 576px) {
   .Container1 {
     padding: 60px 0 30px 0;
     max-width: 80%; }
-  
   .WAYNE {
     padding-left: 40px;
     padding-right: 20px; }
-  
   .USEFUL-LINKS {
     padding-left: 40px; }
-  
   .CONTACT-US {
     padding-left: 40px; }
-  
-  .CONTACT-US .redes {
+    .CONTACT-US .redes {
       font-size: 18px;
       text-align: center;
       margin: 0;
       padding: 0; }
-  
- .OUR-NEWSLETTER {
+  .OUR-NEWSLETTER {
     padding-left: 40px;
     margin: 0;
     padding-right: 40px; }
- 
- .OUR-NEWSLETTER p {
+    .OUR-NEWSLETTER p {
       margin: 0 0 30px 0;
       padding: 0; }
- 
-  .OUR-NEWSLETTER form {
+    .OUR-NEWSLETTER form {
       margin: 0;
       display: flex;
       justify-content: center;
       align-items: center; }
-  
-  .OUR-NEWSLETTER form .email {
+      .OUR-NEWSLETTER form .email {
         border: 0;
         font-family: "Open Sans", sans-serif;
         padding: 7px 8px;
         /* margin: -14px;*/
         width: 60%; }
-  
-  .OUR-NEWSLETTER form .subscribe {
+      .OUR-NEWSLETTER form .subscribe {
         background: #007bff;
         border: 0;
         color: white;
@@ -233,7 +202,6 @@ footer {
         transition: 0.3s;
         padding: 7px 0;
         width: 40%; }
-  
   .Container2 p {
     margin: 0;
     padding: 0;
@@ -274,12 +242,13 @@ footer {
     width: 20%; } }
 
 @media (min-width: 1200px) and (min-width: 1200px) {
+  body {
+    margin: 0; }
   footer {
     background-color: #004a99;
     display: flex;
     flex-direction: column;
     width: 100%; }
- 
   .Container1 {
     background-color: #004a99;
     display: flex;
@@ -296,7 +265,6 @@ footer {
       text-transform: uppercase; }
     .Container1 p {
       line-height: 26px; }
-  
   .WAYNE {
     color: white;
     font-family: "open Sans" sans-serif;
@@ -315,7 +283,6 @@ footer {
       margin: 0 0 20px 0;
       padding: 2px 0 2px 0;
       text-transform: uppercase; }
-  
   .USEFUL-LINKS {
     color: white;
     font-family: "open Sans" sans-serif;
@@ -1230,6 +1197,7 @@ footer {
     font-size: 18px;
     line-height: 3; }
 
+/*footer*/
 /*-----------------------------------
           ORNE MIXINS
 -------------------------------------*/
@@ -1282,4 +1250,24 @@ footer {
       .clients-container .Logos-clients .clients img:hover {
         transform: scale(1.2); }
 
+body {
+  margin: 0;
+  color: #444;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.5; }
 
+/* Estructura General */
+.container {
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 100%; }
+
+/* Títulos iniciales */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+  margin: 0 0 20px 0;
+  padding: 0; }
