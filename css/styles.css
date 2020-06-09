@@ -56,13 +56,20 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0px;
     padding: 0px;
     width: 80%; }
+    @media (max-width: 768px) {
+      .clients-container .Logos-clients {
+        flex-direction: column;
+        width: 100%; } }
     .clients-container .Logos-clients .clients {
       align-items: center;
       box-sizing: border-box;
       border-bottom: 1px solid #d6eaff;
       border-right: 1px solid #d6eaff;
-      padding: 40px;
+      padding: 45px;
       width: 25%; }
+      @media (max-width: 768px) {
+        .clients-container .Logos-clients .clients {
+          width: 100%; } }
       .clients-container .Logos-clients .clients img {
         max-width: 100%;
         border-style: none;

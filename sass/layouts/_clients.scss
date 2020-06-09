@@ -21,6 +21,10 @@
         }
     }
     .Logos-clients{
+        @include breakpoint-tablet-desktop-first{
+            flex-direction: column;
+            width: 100%;
+        }
         background-color: $white;
         display: flex;
         flex-wrap: wrap;
@@ -33,7 +37,10 @@
             box-sizing: border-box;
             border-bottom: 1px solid #d6eaff;
             border-right: 1px solid #d6eaff;
-            padding: 40px;
+            padding: 45px;
+            @include breakpoint-tablet-desktop-first{
+                width: 100%;
+            }
             width: 25%;
             
         img{
