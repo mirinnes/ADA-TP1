@@ -1,7 +1,7 @@
 // Abstract
 @import "./abstract/mixins";
 @import "./abstract/variables";
-
+@import "./layouts/footer";
 // Components
 
 // Section
@@ -12,6 +12,18 @@
 // ==> Mora Sections
 @import "./layouts/whyChooseUs";
 @import "./layouts/portfolio";
+// ==> Orne Sections
+@import "./layouts/services";
+// ==> Cele Sections
+@import "./layouts/team";
+@import "./layouts/testimonials";
+@import "./components/slider";
+@import "./components/cards";
+// ==> Sofi Sections
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./components/menumobile";
+@import "./layouts/clients";
 
 body {
     margin: 0;
@@ -24,19 +36,10 @@ body {
 /* Estructura General */
 .container {
     margin: 0 auto;
+    box-sizing: border-box;
     padding-right: 15px;
     padding-left: 15px;
     max-width: 100%;
-    @include breakpoint-mobile-2 {
-        max-width: 512px;
-    }
-    @include breakpoint-tablet {
-        max-width: 768px;
-    }
-    @include breakpoint-desktop {
-        max-width: 100%;
-    }
-
 }
 
 /* Títulos iniciales */

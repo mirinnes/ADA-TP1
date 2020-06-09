@@ -1,0 +1,329 @@
+@import "../abstract/mixins";
+@import "../abstract/variables";
+
+body {
+    margin: 0;
+}
+footer{
+    background-color: #004a99;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.Container1 {
+    background-color: #004a99;
+    display: inline-block;
+    flex-wrap: wrap;
+    max-width: 100%;
+    h1{
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+.WAYNE {
+    padding: 15px;
+    .titulo{
+        @include titulo;
+    }
+    p {
+        color: #ecf5ff;
+        font-family: $normal-font;
+        font-size: 14px;
+        line-height: 24px;
+        padding: 0px;
+    }
+}
+.USEFUL-LINKS {
+    @include descripciones;
+    padding-left: 15px;
+     .links {
+        color:white;
+        line-height: 35px;
+        text-decoration: none;
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+
+}
+.CONTACT-US {
+    @include descripciones;
+    padding-left: 15px;
+    p{
+        margin: 0;
+    }
+    .div-redes {
+        margin: 25px 0 25px;
+        }
+        .iconos {
+            @include iconos 
+        }
+}        
+.OUR-NEWSLETTER {
+    @include descripciones;
+    margin-left: 15px;
+    form {
+        margin:0;
+        display: flex;
+            .email {
+                border: 0;
+                font-family: $normal-font;
+                padding: 7px 8px;
+                margin: 0;
+                width: 60%;
+            }
+            .subscribe {
+                background: $otherblue;
+                border: 0;
+                color: white;
+                cursor: pointer;
+                font-family: $normal-font;
+                text-align: center;
+                transition: 0.3s;
+                padding: 7px 0;
+                width: 34%;
+            }       
+        }
+}
+.Container2 {
+    background-color: $footerdown;
+    display: flex;
+    height: 110px;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    top: 15px;
+    p{
+        text-align: center;
+    }
+        .COPYRIGHT {
+                @include descripciones
+} 
+}
+@include circle-style;
+///////////////////////////////////////////
+@include breakpoint-tablet-2 {
+    @media (min-width: 576px){     
+.Container1 {
+    padding: 60px 0 30px 0;
+    max-width: 80%;
+        }
+.WAYNE {
+    padding-left: 40px; 
+    padding-right: 20px; 
+}
+.USEFUL-LINKS {
+    padding-left: 40px;   
+}
+.CONTACT-US {
+    padding-left: 40px; 
+    .redes {
+        font-size: 18px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+}      
+.OUR-NEWSLETTER{
+    padding-left: 40px;
+    margin: 0;
+    padding-right: 40px;
+    p {
+        margin: 0 0 30px 0;
+        padding: 0;
+    }
+    form {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .email {
+            border: 0;
+            font-family: $normal-font;
+            padding: 7px 8px;
+           /* margin: -14px;*/
+            width: 60%;
+    }
+        .subscribe {
+            background: $otherblue;
+            border: 0;
+            color: white;
+            cursor: pointer;
+            font-family: $normal-font;
+            text-align: center;
+            transition: 0.3s;
+            padding: 7px 0;
+            width: 40%;
+    }}
+}    
+.Container2 {
+    p{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;}
+    .COPYRIGHT{
+    margin: 25px;
+    }
+    .circle {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+}}/*media*/
+//////////////////////////////////////////////////
+@include breakpoint-tablet {
+        @media (min-width: 768px) {
+.Container1{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 768px;
+}
+.WAYNE{
+    padding-top: 0;
+    width: 45%;
+}
+.OUR-NEWSLETTER{
+    padding: 0 20px 15px 60px;
+    width: 35%;
+}
+.CONTACT-US{
+    width: 40%;
+    padding: 0 20px 15px 40px;
+}
+.USEFUL-LINKS{
+    padding: 0 0 15px 25px;
+}
+                
+}}
+///////////////////////////////////////////////////
+@include breakpoint-desktop-1{
+.Container1{
+    max-width:100%;
+    justify-content: center;
+    }
+.WAYNE{
+    width: 20%;
+}
+.CONTACT-US{
+    width: 20%;
+}
+.OUR-NEWSLETTER{
+    width: 20%;
+}     
+}    
+/////////////////////////////////////////////////
+@include breakpoint-desktop { 
+       @media (min-width: 1200px){
+body {
+    margin: 0;
+}
+footer{
+    background-color: #004a99;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.Container1{
+    @include Containers;
+    h1{
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+    }
+    p{
+        line-height: 26px;
+    }
+}
+.WAYNE {
+    @include descripciones;
+    width: 23%;
+    margin-right: 30px;
+    .titulo{
+        @include titulo;
+    }
+}
+.USEFUL-LINKS {
+    @include descripciones;
+    width: 15%;
+    ul{
+        list-style: none;
+        padding: 0;
+    }
+     .links {
+        color:white;
+        line-height: 35px;
+        text-decoration: none;
+        &:hover{
+            color:#74b5fc;
+        }
+}}
+}
+.CONTACT-US {
+    @include descripciones;
+    margin-right: 30px;
+    width: 250px;
+    p{
+        margin: 0;
+    }
+    .div-redes {
+        margin: 25px 0 25px;
+        }
+        .iconos {
+            @include iconos 
+        }
+}
+.OUR-NEWSLETTER {
+    @include descripciones;
+    width: 17%;
+    padding: 0;
+    .email {
+        border: 0;
+        font-family: $normal-font;
+        padding: 6px 8px;
+        width: 75%;
+        margin: 0;
+    }
+    .subscribe {
+        background: $otherblue;
+        border: 0;
+        color: white;
+        cursor: pointer;
+        font-family: $normal-font;
+        text-align: center;
+        transition: 0.3s;
+        padding: 6px 0;
+        width: 35%;
+        &:hover{
+            background-color: $bluehover;
+        }
+    }
+    }
+}   
+.Container2 {
+    @include Containers;
+    background-color: $footerdown;
+    height: 35px;
+    padding: 20px 0 50px 0;
+    position: relative;
+        p{
+            margin: 0;
+            padding: 0;
+            font-size: 13px;
+         }               
+        .COPYRIGHT {
+            @include descripciones
+                   }
+        .circle{
+            width: 45px;
+            height: 45px;
+               }
+}
+//////////////////////////////////////////////////
