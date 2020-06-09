@@ -51,12 +51,18 @@
 }
 
 // ////////////////////////////////////////// Break Points
+/*footer*/
+@mixin breakpoint-mobile-2 {
+    @media (min-width: 320px ){
+    }
+}
 
 @mixin breakpoint-mobile-1 {
     @media (min-width: 414px) {
         @content;
     }
 }
+
 
 @mixin breakpoint-tablet-2 {
     @media (min-width: 576px){
@@ -76,17 +82,28 @@
     }
 }
 
+@mixin breakpoint-desktop-1{
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
 @mixin breakpoint-desktop {
     @media (min-width: 1200px) {
         @content;
     }
 }
-
 @mixin breakpoint-desktop-first {
     @media (max-width: 1200px) {
             @content;
    }
 }
+
+
+
+
+
+
 
 
 /*-----------------------------------
@@ -117,6 +134,80 @@
     text-align: center;
 }
 
+// /////////////////////////////////////////////Footer
+@mixin footer-redes {
+    background-color: $blue; 
+    border-radius: 50px; 
+    height: 36px;
+    width: 36px; 
+}
+@mixin Containers {
+    background-color: #004a99;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 60px 0 30px 0;
+    width: 100%;
+}
+@mixin descripciones {
+    color: white;
+    font-family: "open Sans" sans-serif;
+    font-size: $font-s;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+@mixin iconos {
+    align-items: center;
+    background-color:$otherblue;
+    border-radius: 50%;
+    color: white;
+    display: inline-flex;
+    height: 32px;
+    font-size: 20px;
+    justify-content: center;
+    margin-right: 5px;
+    padding: 2px 2px;
+    text-align: center;
+    width: 32px;
+    &:hover{
+        background-color: $bluehover;
+        opacity: 30%;
+    }
+}
+
+@mixin titulo {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    letter-spacing: 3px;
+    line-height: 1;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    text-transform: uppercase;
+}
+
+@mixin circle-style {
+    .circle {
+        align-items: center;
+        background-color: $otherblue;
+        border-radius: 50%;
+        bottom: 20px;
+        display: flex;
+        height: 45px;
+        justify-content: center;
+        position: fixed;
+        right: 20px;
+        width: 45px;
+        cursor: pointer;
+        .fa-chevron-up{
+            color: white;
+                      } 
+            } 
+}
+
+
 /*-----------------------------------
           CELE MIXINS
 -------------------------------------*/
@@ -142,4 +233,3 @@
     align-items:center;
     justify-content:center;
 } 
-
