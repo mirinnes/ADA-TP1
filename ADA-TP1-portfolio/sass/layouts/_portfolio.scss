@@ -1,0 +1,179 @@
+/*-----------------------------------Portfolio comienzo-----*/
+
+#portafolio {
+    .containerbox {
+        margin: 0 auto;
+        padding-right: 15px;
+        padding-left: 15px;
+        max-width: 100%;
+        @include breakpoint-mobile-1 {
+            max-width: 414px;
+        }
+        @include breakpoint-tablet {
+            max-width: 768px;
+        }
+        @include breakpoint-desktop {
+            max-width: 1140px;
+        }
+    }
+
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    margin: 60px 0;
+    .headerbox {
+        h3 {
+            color: $blackbold;
+            font-family: $title-font;
+            font-size: $title-h3;
+            font-weight: 500;
+            margin: 0 0 20px 0;
+            text-align: center;
+        }
+    }
+
+    .ptabs {    
+    text-align: center;
+    margin: 5px 0 35px 0;
+    width: 100%;
+        span {
+            color: $blue;
+            font-size: $font-xs;
+            display: inline-block;
+            margin: 15px;
+            padding: 6px 15px;
+            text-transform: uppercase;
+            cursor: pointer;
+            &:first-child {
+                background-color: $blue;
+                border-radius: 50px;
+                color: $white;
+            }
+            &:hover {
+                background-color: $blue;
+                border-radius: 50px;
+                color: $white;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+    
+    /* CARDS */
+    .pcards-container {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: row wrap;
+        justify-content: center;
+        .pcard-item {
+            background: #003166;
+            border-radius: 6px;
+            height: 250px;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 30px;
+
+            img { 
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+            &:hover {
+                img { 
+                    opacity: 0.4;
+                    transition: 0.3s;
+                }
+                .pcard-info {
+                    opacity: 1;
+                }
+            } 
+        }
+    }
+
+    .pcard-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left:0;
+        position: absolute;
+        opacity: 0; 
+    }
+
+    .pcard-info h4 {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 1px;
+        margin: 14px;
+        padding-bottom: 0;
+        a {
+            color: $white;
+            text-decoration: none;
+            transition: 0.5s;
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+
+    .pcard-info p {
+        color: #e2effe;
+        font-weight: 500;
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+    }
+
+    .pcard-info .plink-details, 
+    .pcard-info .plink-preview {
+        background: $blue;
+        border-radius: 50%;
+        display: inline-block;
+        height: 36px;
+        line-height: 1;
+        margin: 10px 4px 0 4px;
+        text-align: center;
+        width: 36px;
+        cursor: pointer;
+        &:hover {
+            background: #3395ff;
+        }
+    }
+
+    .plinks { display: block; }
+
+    .pcard-info .plink-details i, 
+    .pcard-info .plink-preview i  {
+        font-size: 18px;
+        line-height: 36px;
+        color: #fff;
+        text-align: center;
+        vertical-align: middle;
+    }
+} /* Termina contenedor principal => Portfolio */
+
+/* Portafolio Responsive */
+@include breakpoint-mobile-1 {
+    #portafolio .pcards-container .pcard-item {
+        max-width: 100%;
+        margin: 0 0 30px 0;
+    }
+}
+
+@include breakpoint-tablet {
+    #portafolio .pcards-container .pcard-item {
+        margin: 0 15px 30px 15px;
+        max-width: 46%;
+    }
+}
+
+@include breakpoint-desktop {
+    #portafolio .pcards-container .pcard-item {
+        margin: 0 14px 30px 14px;
+        max-width: 30.71%;
+    }
+}
+/*-----------------------------------Portfolio-termina-----*/
