@@ -4,49 +4,580 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wayne</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800|Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
-    <header>
-        <!--El menu de responsive, dejar en stand by-->
+    <header class="main-header">       
+        <div class="main-loguito">
+            <img src="img/logo-tp.png" alt="loguitoAda">
+        </div>
+
+        <nav class="main-nav">
+                    <ul>
+                        <li>
+                           <a href="#">Home</a> 
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                        <li>
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#">Team</a>
+                        </li>
+                        <li>
+                            <a href="#">Drop down</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact us</a>
+                        </li>
+                    </ul>
+        </nav>
+                
+        <div class="hamburguesa">
+            <a href="#contenedor">
+                <i class="fas fa-bars"></i></a>
+        </div>
     </header>
+    <!-------------------------------------MENU-MOBILE----------->
+    <div id="contenedor"> 
+        <a class="cruz" href="#"> <i class="fas fa-times"></i></a>
+    </div>
 
-   
+    <div class="menu-mobile">
+        <nav class="nav-mobile">
+            <ul>
+                <li>
+                   <a href="#">Home</a> 
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#">Team</a>
+                </li>
+                <li>
+                    <a href="#">Drop down</a>
+                </li>
+                <li>
+                    <a href="#">Contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!------------------------------------------------>
+
     <!----------------------------------------HERO-->
-    <section class="hero container">
-
+    <section id="main-hero">
+        <div class="main-container">
+            <div class="main-img i1">
+                <img src="img/intro-img.svg" alt="heroimg">
+            </div>
+            <div class="main-text">
+                <h2>
+                    We provide
+                    <br>
+                    <span class="main-span">solutions</span>  
+                    <br>                    
+                    for your business!
+                </h2>      
+                <div>
+                    <a class="main-button-link" href="#AboutUs">Get Started</a>
+                    <a class="main-button-link" href="#Services">Our Services</a>
+                </div>               
+                
+            </div>
+            <div class="main-img i2">
+                <img src="img/intro-img.svg" alt="heroimg">
+            </div>
+        </div> 
     </section>
-    
     <!----------------------------------------ABOUT-US-->
     <section class="aboutus container">
 
     </section>
-    
+
     <!----------------------------------------SERVICES-->
-    <section class="services container">
+    <section id="services" class="container">
+
+        <div class="contenedor">
+            <h1>Services</h1>
+            <p class="texto">Laudem latine persequeris id sed, ex fabulas delectus quo. 
+                No vel partiendo abhorreant vituperatoribus.</p>
+
+           <div class="wrap">
+                
+       <!--1--><div class="card">
+    
+                 <img src="img/services/lorem1.PNG">
+                 <div>
+                      <h2 class="titulocard">Lorem Ipsum</h2>
+                      <p class="textcard">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                    </div>
+               </div>
+
+       <!--2--><div class="card">
+    
+                    <img src="img/services/dolor2.PNG">
+                    <div>
+                    <h2 class="titulocard">Dolor Sitema</h2>
+                     <p class="textcard">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                    </div>
+                    </div>
+
+       <!--3--><div class="card">
+    
+                    <img src="img/services/sed3.PNG" class="imagen">
+                    <div>
+                    <h2 class="titulocard tres">Sed ut perspiciatis</h2>
+                     <p class="textcard">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                    </div>
+               </div>
+
+       <!--4--><div class="card">
+    
+                    <img src="img/services/magni4.PNG" class="imagen">
+                    <div>
+                    <h2 class="titulocard">Magni Dolores</h2>
+                    <p class="textcard">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    </div>
+               </div>
+
+       <!--5--><div class="card">
+    
+                    <img src="img/services/nemo5.PNG" class="imagen">
+                    <div>
+                    <h2 class="titulocard">Nemo Enim</h2>
+                    <p class="textcard">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+                    </div>
+               </div>
+
+       <!--6--><div class="card">
+    
+                    <img src="img/services/eiusmod6.PNG" class="imagen">
+                    <div>
+                    <h2 class="titulocard seis">Eiusmod Tempor</h2>
+                    <p class="textcard">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+                    </div>
+               </div>
+
+            </div> <!--Div Wrap-->
+
+        </div>
 
     </section>
-    
+
     <!----------------------------------------WHY/CHOOSE/US-->
-    <section class="whychooseus">
-    
+    <section id="whychooseus">
+        <div class="containerbox">
+            <!-- Inner Header  -->
+            <div class="headerbox">
+                <h3>Why choose us?</h3>
+                <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+            </div>
+            <!-- Cards Section -->
+            <div class="cards-container row">
+                <div class="card col-3">
+                    <i class="far fa-gem"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Corporis dolorem</h5>
+                        <p class="card-text">Deleniti optio et nisi dolorem debitis. Aliquam nobis est temporibus sunt ab inventore officiis aut voluptatibus.</p>
+                        <a href="#" class="readmore">Read more </a>
+                    </div>
+                </div>
+
+                <div class="card col-3">
+                    <i class="fas fa-language"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Voluptates dolores</h5>
+                        <p class="card-text">Voluptates nihil et quis omnis et eaque omnis sint aut. Ducimus dolorum aspernatur.</p>
+                        <a href="#" class="readmore">Read more </a>
+                    </div>
+                </div>
+
+                <div class="card col-3">
+                    <i class="far fa-object-group"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Eum ut aspernatur</h5>
+                        <p class="card-text">Autem quod nesciunt eos ea aut amet laboriosam ab. Eos quis porro in non nemo ex.</p>
+                        <a href="#" class="readmore">Read more </a>
+                    </div>
+                </div>
+            </div> <!-- Ends cards section -->
+            <!-- Cards Numbers -->
+            <div class="cards-container row">
+                <div class="col-4 numbox">
+                    <span class="cantidad">
+                        <p class="numbers"><span class="numbers__window"><span class="numbers__window__digit numbers__window__digit--1" data-fake="2648519073">2</span></span><span class="numbers__window"><span class="numbers__window__digit numbers__window__digit--2" data-fake="7205186397">7</span></span><span class="numbers__window"><span class="numbers__window__digit numbers__window__digit--3" data-fake="4398216704">4</span></span></p>
+                    </span>
+                    <p>Clients</p>
+                </div>
+                <div class="col-4 numbox">
+                    <span class="cantidad">
+                        <p class="numbers"><span class="numbers__window"><span class="numbers__window__digit numbers__window__digit--1" data-fake="4628519073">4</span></span><span class="numbers__window"><span class="numbers__window__digit numbers__window__digit--2" data-fake="3705186492">2</span></span><span class="numbers__window"><span class="numbers__window__digit numbers__window__digit--3" data-fake="1398256407">1</span></span></p>
+                    </span>
+                    <p>Projects</p>
+                </div>
+                <div class="col-4 numbox">
+                    <span class="cantidad">
+                        <p class="numbers"><span class="numbers__window"><span class="numbers__window__digit numbers__window__digit--1" data-fake="1648519071">1,</span></span><span class="numbers__window"><span class="numbers__window__digit numbers__window__digit--2" data-fake="3205186393">3</span></span><span class="numbers__window"><span class="numbers__window__digit numbers__window__digit--3" data-fake="6398214706">6</span></span><span class="numbers__window"><span class="numbers__window__digit numbers__window__digit--4" data-fake="4398216704">4</span></span>
+                        </p>
+                    </span>
+                    <p>Hours of Support</p>
+                </div>
+                <div class="col-4 numbox">
+                    <span class="cantidad">
+                        <p class="numbers"><span class="numbers__window"><span class="numbers__window__digit numbers__window__digit--1" data-fake="1628549071">1</span></span><span class="numbers__window"><span class="numbers__window__digit numbers__window__digit--2" data-fake="8705126498">8</span></span></p>
+                    </span>
+                    <p>Hard Workers</p>
+                </div>
+            </div>
+            <!-- Ends Cards Numbers -->
+        </div>
+
     </section>
-    
+
     <!----------------------------------------PORTFOLIO-->
-    <section class="portofolio container">
+    <section id="portafolio">
+        <div class="containerbox">
+            <!-- Inner Header  -->
+            <div class="headerbox">
+                <h3>Our Portfolio</h3>
+            </div>
+            <div class="ptabs">
+                <span>All</span><span>App</span><span>Card</span><span>Web</span>
+            </div>
+       
+            <div class="pcards-container row">
+                    <!-- 1ra Fila -->
+                    <figure class="pcard-item">
+                        <img src="img/portfolio/app1.jpg" alt="App 1">
+                        <figcaption class="pcard-info">
+                            <h4><a href="#">App 1</a></h4>
+                            <p>App</p>
+                            <div class="plinks"><a href="#" class="plink-preview" title="Preview"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="plink-details" title="More Details"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="pcard-item">
+                        <img src="img/portfolio/web3.jpg" alt="Web 3">
+                        <figcaption class="pcard-info">
+                            <h4><a href="#">Web 3</a></h4>
+                            <p>Web</p>
+                            <div class="plinks"><a href="#" class="plink-preview" title="Preview"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="plink-details" title="More Details"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </figcaption>
+                    </figure>
 
+                    <figure class="pcard-item">
+                        <img src="img/portfolio/app2.jpg" alt="App 2">
+                        <figcaption class="pcard-info">
+                            <h4><a href="#">App 2</a></h4>
+                            <p>App</p>
+                            <div class="plinks"><a href="#" class="plink-preview" title="Preview"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="plink-details" title="More Details"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                        </figcaption>
+                    </figure>
+                    <!-- 2da Fila -->
+                    <figure class="pcard-item">
+                        <img src="img/portfolio/card2.jpg" alt="Card 2">
+                        <figcaption class="pcard-info">
+                            <h4><a href="#">Card 2</a></h4>
+                            <p>Card</p>
+                            <div class="plinks"><a href="#" class="plink-preview" title="Preview"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="plink-details" title="More Details"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="pcard-item">
+                        <img src="img/portfolio/web2.jpg" alt="Web 2">
+                        <figcaption class="pcard-info">
+                            <h4><a href="#">Web 2</a></h4>
+                            <p>Web</p>
+                            <div class="plinks"><a href="#" class="plink-preview" title="Preview"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="plink-details" title="More Details"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="pcard-item">
+                        <img src="img/portfolio/app3.jpg" alt="App 3">
+                        <figcaption class="pcard-info">
+                            <h4><a href="#">App 3</a></h4>
+                            <p>App</p>
+                            <div class="plinks"><a href="#" class="plink-preview" title="Preview"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="plink-details" title="More Details"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                        </figcaption>
+                    </figure>
+                    <!-- 3ra Fila -->
+                    <figure class="pcard-item">
+                        <img src="img/portfolio/card1.jpg" alt="Card 1">
+                        <figcaption class="pcard-info">
+                            <h4><a href="#">Card 1</a></h4>
+                            <p>Card</p>
+                            <div class="plinks"><a href="#" class="plink-preview" title="Preview"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="plink-details" title="More Details"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="pcard-item">
+                        <img src="img/portfolio/card3.jpg" alt="Card 3">
+                        <figcaption class="pcard-info">
+                            <h4><a href="#">Card 3</a></h4>
+                            <p>Card</p>
+                            <div class="plinks"><a href="#" class="plink-preview" title="Preview"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="plink-details" title="More Details"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="pcard-item">
+                        <img src="img/portfolio/web1.jpg" alt="Web 1">
+                        <figcaption class="pcard-info">
+                            <h4><a href="#">Web 1</a></h4>
+                            <p>Web</p>
+                            <div class="plinks"><a href="#" class="plink-preview" title="Preview"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="plink-details" title="More Details"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                        </figcaption>
+                    </figure>
+            </div>
+        </div>
     </section>
-    
+
     <!----------------------------------------TESTIMONIALS-->
-    <section class="testimonial container">
+    <section id="Testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonials-cards-container">
+            <figure>
+                <div class="testimonialCard" id="one">
+                    <div class="img-container">
+                        <img src="img/testimonial-1.jpg" alt="" class="">
+                    </div>
+                    <div class="textContainer">
+                        <h3>Saul Goodman</h3>
+                        <h4>Ceo & Founder</h4>
+                        <p class="testimonialDescription">
+                            Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
+                            Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                        </p>
 
+
+                    </div>
+
+                </div>
+            </figure>
+            <figure>
+                <div class="testimonialCard" id="two">
+                    <div class="img-container">
+                        <img src="img/testimonial-2.jpg" alt="" class="">
+                    </div>
+                    <div class="textContainer">
+
+                        <h3>Sara Wilson</h3>
+                        <h4>Designer</h4>
+                        <p class="testimonialDescription">
+                            Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
+                            Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                        </p>
+
+
+                    </div>
+
+                </div>
+
+            </figure>
+            <figure>
+                <div class="testimonialCard" id="three">
+                    <div class="img-container">
+                        <img src="img/testimonial-3.jpg" alt="" class="">
+                    </div>
+                    <div class="textContainer">
+
+                        <h3>Jena Karlis</h3>
+                        <h4>Store Owner</h4>
+                        <p class="testimonialDescription">
+                            Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
+                            Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                        </p>
+
+
+                    </div>
+
+                </div>
+            </figure>
+            <figure>
+                <div class="testimonialCard" id="four">
+                    <div class="img-container">
+                        <img src="img/testimonial-4.jpg" alt="" class="">
+                    </div>
+                    <div class="textContainer">
+
+                        <h3>Matt Brandon</h3>
+                        <h4>Freelancer</h4>
+                        <p class="testimonialDescription">
+                            Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem
+                            veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis
+                            sint
+                            minim.
+                        </p>
+
+                    </div>
+                </div>
+
+            </figure>
+            <figure>
+                <div class="testimonialCard" id="five">
+                    <div class="img-container">
+                        <img src="img/testimonial-5.jpg" alt="" class="">
+                    </div>
+                    <div class="textContainer">
+
+                        <h3>John Larson</h3>
+                        <h4>Entrepreneur</h4>
+                        <p class="testimonialDescription">
+                            Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem
+                            veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis
+                            sint
+                            minim.
+                        </p>
+
+                    </div>
+                </div>
+            </figure>
+        </div>
+        <div class="testimonial-buttons">
+            <input type="radio" id="trigger1" name="slider"checked autofocus>
+            <label for="trigger1"></label>
+            
+            <input type="radio" id="trigger2" name="slider">
+            <label for="trigger2"></label>
+            
+            
+            <input type="radio" id="trigger3" name="slider">
+            <label for="trigger3"></label>
+            
+            
+            <input type="radio" id="trigger4" name="slider">
+            <label for="trigger4"></label>
+            
+            
+            <input type="radio" id="trigger5" name="slider">
+            <label for="trigger5"></label>
+        
+        </div>
     </section>
-    
+
     <!----------------------------------------TEAM-->
-    <section class="team container">
+    <section id="team">
+        <h2>Team</h2>
+        <p class="team-subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+        </p>
+        <div class="team-cards-container">
+            <div class="team-card">
+                <div class="team-img-container">
+                    <img src="img/team-01.jpg" class="imgMember" alt="BenAffleck">
+                    <div class="team-bg"></div>
+                <div class="team-description-container">
+                    <h4>Ben Affleck</h4>
+                    <span>Chief Executive Officer</span>
+                    <div class="team-icons-container">
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-google-plus-g"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+
+
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+            <div class="team-card">
+                <div class="team-img-container">
+                    <img src="img/team-02.jpg" class="imgMember" alt="ChristianBale">
+                    <div class="team-bg"></div>
+                <div class="team-description-container">
+                    <h4>Christian Bale</h4>
+                    <span>Product Manager</span>
+                    <div class="team-icons-container">
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-google-plus-g"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+
+
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+
+            <div class="team-card">
+                <div class="team-img-container">
+                    <img src="img/team-03.jpg" class="imgMember" alt="MichaelKeaton">
+                    <div class="team-bg"></div>
+                <div class="team-description-container">
+                    <h4>Michael Keaton</h4>
+                    <span>CTO</span>
+                    <div class="team-icons-container">
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-google-plus-g"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+
+
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+
+
+            <div class="team-card">
+                <div class="team-img-container">
+                    <img src="img/team-04.jpg" class="imgMember" alt="AdamWest">
+                    <div class="team-bg"></div>
+                <div class="team-description-container">
+                    <h4>Adam West</h4>
+                    <span>Accountant</span>
+                    <div class="team-icons-container">
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-google-plus-g"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+
+
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+        </div>
+        </div>
+
 
     </section>
     
@@ -88,14 +619,12 @@
         </div>
         
 
-    </section>
-    
     <!----------------------------------------CONTACT-US-->
     <section class="contactus container">
 
     </section>
-    
-    
+
+
     <footer>
 
 
@@ -106,20 +635,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
+
 </html>

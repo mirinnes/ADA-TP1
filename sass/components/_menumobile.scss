@@ -1,0 +1,52 @@
+/*------------------------------------------------
+               MENU MOBILE
+------------------------------------------------*/
+#contenedor{
+    display: none;
+    position: absolute;
+    @include breakpoint-tablet-desktop-first{
+        background-color:rgb(19, 39, 57); 
+        width: 100%;
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        opacity: 80%;
+        &:target{
+            display: block; 
+            +.menu-mobile{
+                left: 0px;
+             }
+        }
+        
+    
+        .cruz{
+            position: fixed;
+            right: 10px;
+            top: 10px;
+            color: $white;
+        }
+    }
+}
+
+.menu-mobile{
+            transition: all 0.7s ease-in;
+            position: fixed;
+            left: -260px;
+            top:0px;
+            width: 260px;
+            z-index: 1001;
+            height: 100%;
+            background-color: black;
+            opacity: 60%; 
+            li{
+                list-style: none;
+            }
+            a{
+                text-decoration: none;
+                color: $white;
+                font-size: $font-xl;
+                line-height: 3;
+            }   
+}
