@@ -106,6 +106,7 @@
 @mixin texto {
     color: $mediumgray;
     display: flex;
+    align-self: center;
     font-size: 15px;
     font-family: $normal-font;
     justify-content: center;
