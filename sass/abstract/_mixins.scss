@@ -50,6 +50,17 @@
     
 }
 
+// /////////////////////////Mixin Darken Button
+
+@mixin button-hover-darken($buttonColor, $darkenAmount) {
+    transition: all 0.2s ease-out;
+    &:hover {
+        background-color: darken($color: $buttonColor, $amount: $darkenAmount);
+        transition: all 0.2s ease-in;
+    }
+    
+}
+
 // ////////////////////////////////////////// Break Points
 
 
@@ -185,6 +196,7 @@
     margin-right: 5px;
     padding: 2px 2px;
     text-align: center;
+    text-decoration: none;
     width: 32px;
     &:hover{
         background-color: $bluehover;

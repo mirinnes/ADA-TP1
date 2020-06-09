@@ -139,7 +139,7 @@
             width: 170px;
             cursor: pointer;
             @include button-withBackground($blue,$white,$font-m,30px,8px);
-            @include button-hover-darken($blue,7)
+            @include button-hover-darken($blue,7);
 
         }
 
