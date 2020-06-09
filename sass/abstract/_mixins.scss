@@ -51,11 +51,7 @@
 }
 
 // ////////////////////////////////////////// Break Points
-/*footer*/
-@mixin breakpoint-mobile-3 {
-    @media (min-width: 320px ){
-    }
-}
+
 
 @mixin breakpoint-mobile-1 {
     @media (min-width: 414px) {
@@ -70,15 +66,26 @@
     }
 }
 
+/*footer*/
+@mixin breakpoint-mobile-3 {
+    @media (min-width: 320px ){
+    }
+}
 
+@mixin breakpoint-tablet {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
 @mixin breakpoint-tablet-2 {
     @media (min-width: 576px){
         @content;
     }
 }
 
-@mixin breakpoint-tablet {
-    @media (min-width: 768px) {
+
+@mixin breakpoint-tablet-3 {
+    @media (min-width: 990px) {
         @content;
     }
 }
@@ -89,17 +96,18 @@
     }
 }
 
+@mixin breakpoint-desktop {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
 @mixin breakpoint-desktop-1{
     @media (min-width: 992px) {
         @content;
     }
 }
 
-@mixin breakpoint-desktop {
-    @media (min-width: 1200px) {
-        @content;
-    }
-}
 
 @mixin breakpoint-desktop-first {
     @media (max-width: 1200px) {
