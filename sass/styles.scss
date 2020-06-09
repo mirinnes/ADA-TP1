@@ -15,7 +15,10 @@
 @import "./layouts/testimonials";
 @import "./components/slider";
 @import "./components/cards";
-
+// ==> Sofi Sections
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./components/menumobile";
 
 
 body {
@@ -39,5 +42,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Montserrat", sans-serif;
     line-height: 1.2;
     margin: 0 0 20px 0;
-    padding: 0;   
+    padding: 0;
 }
+
+

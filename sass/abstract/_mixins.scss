@@ -85,9 +85,10 @@
 
 @mixin breakpoint-desktop-first {
     @media (max-width: 1200px) {
-        @content;
-    }
+            @content;
+   }
 }
+
 
 /*-----------------------------------
           ORNE MIXINS
@@ -102,6 +103,7 @@
     margin: 5px;
     text-align: center;
 }
+
 @mixin texto {
     color: $mediumgray;
     display: flex;
@@ -132,5 +134,11 @@
     flex-direction: $flex-direction;
     justify-content: $justify-content;
     align-items: $align-items;
-
 }
+
+// //////////////////////////////////////////////////////
+@mixin display-center {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+} 
