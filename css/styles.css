@@ -1,22 +1,117 @@
 @charset "UTF-8";
-/*footer*/
-/*-----------------------------------
-          ORNE MIXINS
--------------------------------------*/
-/*-----------------------------------
-          CELE MIXINS
--------------------------------------*/
-/* Fonts */
-/*footer*/
-/*-----------------------------------
-          ORNE MIXINS
--------------------------------------*/
-/*-----------------------------------
-          CELE MIXINS
--------------------------------------*/
-/* Fonts */
-body {
-  margin: 0; }
+
+/*----------------------------------------ABOUT-US--*/
+/*--------------------------------------------------*/
+.aboutus p {
+  color: #556877; }
+
+.aboutus a {
+  text-decoration: none; }
+
+.title-aboutus {
+  padding: 50px 0;
+  text-align: center; }
+  .title-aboutus h1 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #111111; }
+  .title-aboutus p {
+    font-size: 15px; }
+    @media (min-width: 768px) {
+      .title-aboutus p {
+        margin: 0;
+        max-width: 350px;
+        display: inline-block; } }
+    @media (min-width: 1200px) {
+      .title-aboutus p {
+        font-size: 17px;
+        max-width: 600px; } }
+
+.text-aboutus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+  @media (min-width: 1200px) {
+    .text-aboutus {
+      padding: 0 50px; } }
+  .text-aboutus .imagen-aboutus {
+    padding: 40px 0; }
+    .text-aboutus .imagen-aboutus.f1 {
+      display: none; }
+      @media (min-width: 1200px) {
+        .text-aboutus .imagen-aboutus.f1 {
+          display: inline-block; } }
+    @media (min-width: 1200px) {
+      .text-aboutus .imagen-aboutus.f2 {
+        display: none; } }
+    @media (min-width: 768px) {
+      .text-aboutus .imagen-aboutus {
+        transform: scale(0.9); } }
+    @media (min-width: 1200px) {
+      .text-aboutus .imagen-aboutus {
+        transform: scale(0.9);
+        max-width: 45%;
+        padding: 0 0; } }
+    .text-aboutus .imagen-aboutus img {
+      width: 100%; }
+  .text-aboutus h3 {
+    font-size: 24px; }
+  .text-aboutus p {
+    color: #283d50;
+    line-height: 27px; }
+  @media (min-width: 768px) {
+    .text-aboutus .text {
+      width: calc(100% - 80px); } }
+  @media (min-width: 1200px) {
+    .text-aboutus .text {
+      font-size: 17px;
+      width: 40%;
+      box-sizing: border-box; }
+      .text-aboutus .text h3 {
+        font-size: 27px; } }
+  .text-aboutus.a1 .container-options {
+    width: 100%; }
+    .text-aboutus.a1 .container-options .text-op {
+      padding: 20px 0;
+      display: flex; }
+      .text-aboutus.a1 .container-options .text-op:hover .icon {
+        transition: cubic-bezier(1, -0.06, 0.56, 0.97);
+        transition-duration: 0.3s;
+        background-color: #007bff; }
+        .text-aboutus.a1 .container-options .text-op:hover .icon i {
+          color: #ffffff; }
+      .text-aboutus.a1 .container-options .text-op .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        border-radius: 50%;
+        border: 3px solid #007bff;
+        margin: 0;
+        height: fit-content; }
+        .text-aboutus.a1 .container-options .text-op .icon i {
+          font-size: 24px;
+          color: #007bff;
+          padding: 17px; }
+      .text-aboutus.a1 .container-options .text-op .icon-text {
+        padding-left: 15px; }
+        .text-aboutus.a1 .container-options .text-op .icon-text h4 {
+          margin-bottom: 6px;
+          width: fit-content; }
+          .text-aboutus.a1 .container-options .text-op .icon-text h4 a {
+            color: #111111;
+            font-size: 18px; }
+        .text-aboutus.a1 .container-options .text-op .icon-text p {
+          margin: 0;
+          line-height: 24px;
+          font-size: 14px;
+          font-weight: 450; }
+  @media (min-width: 1200px) {
+    .text-aboutus.a1, .text-aboutus.a2, .text-aboutus.a3 {
+      padding: 0px 80px; } }
+
+/*--------------------------------------------------*/
 
 footer {
   background-color: #004a99;
@@ -1251,7 +1346,7 @@ footer {
       .clients-container .Logos-clients .clients img:hover {
         transform: scale(1.2); }
 
-body {
+  body {
   margin: 0;
   color: #444;
   font-family: "Open Sans", sans-serif;
@@ -1265,6 +1360,7 @@ body {
   padding-right: 15px;
   padding-left: 15px;
   max-width: 100%; }
+
 
 /* Títulos iniciales */
 h1, h2, h3, h4, h5, h6 {

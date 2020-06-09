@@ -64,6 +64,13 @@
 }
 
 
+@mixin breakpoint-mobile-2 {
+    @media (min-width: 576px) {
+              @content;
+    }
+}
+
+
 @mixin breakpoint-tablet-2 {
     @media (min-width: 576px){
         @content;
@@ -93,6 +100,7 @@
         @content;
     }
 }
+
 @mixin breakpoint-desktop-first {
     @media (max-width: 1200px) {
             @content;
@@ -233,3 +241,5 @@
     align-items:center;
     justify-content:center;
 } 
+
+

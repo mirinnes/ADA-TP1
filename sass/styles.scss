@@ -5,6 +5,10 @@
 // Components
 
 // Section
+// About Us <~~ Miri 
+@import "./layouts/aboutUs";
+// Contact Us  <~~ Miri 
+@import "./layouts/contactUs";
 // ==> Mora Sections
 @import "./layouts/whyChooseUs";
 @import "./layouts/portfolio";
@@ -45,4 +49,3 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 20px 0;
     padding: 0;
 }
-
